@@ -75,6 +75,9 @@ a,
         flex: 1;
         position: relative;
         width: auto;
+        .content {
+            border-top: 1px solid $border;
+        }
     }
     &.collapsed {
         padding-left: 100px;
@@ -120,6 +123,7 @@ a,
         display: flex;
         flex-direction: column;
         padding: 16px 0;
+        border-top: 1px solid $border;
         a {
             display: flex;
             align-items: center;
@@ -150,9 +154,6 @@ a,
                 }
             }
         }
-        &+nav {
-            border-top: 1px solid $border;
-        }
     }
     h1 {
         display: flex;
@@ -162,7 +163,6 @@ a,
         padding: 0 24px;
         border: 1px solid transparent;
         height: 80px;
-        border-bottom: 1px solid $border;
         transition: all .2s ease-in-out;
         img {
             height: 24px;
@@ -183,8 +183,8 @@ a,
         width: 24px;
         height: 80px;
         background: none;
-        border: 1px dotted $border;
-        border-width: 0 0 1px 1px;
+        border: 1px solid $border;
+        border-width: 0 0 0 1px;
         text-align: center;
         cursor: col-resize;
         input {
@@ -202,8 +202,10 @@ a,
             transition: all .2s ease-in-out;
         }
         &:hover {
-            border-color: $border-deep;
             background: #FFF;
+            .ion {
+                color: rgba($txt-navy, 75%);
+            }
         }
     }
 }
@@ -246,7 +248,6 @@ a,
     box-sizing: border-box;
     padding: 0 40px;
     height: 80px;
-    border-bottom: 1px solid $border;
     font-size: 14px;
     line-height: 80px;
     box-shadow: 0 2px #F9F9FA;

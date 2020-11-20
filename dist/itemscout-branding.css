@@ -60,6 +60,9 @@ a,
   position: relative;
   width: auto;
 }
+.itemscout-wrap .container .content {
+  border-top: 1px solid #EBF0F6;
+}
 .itemscout-wrap.collapsed {
   padding-left: 100px;
 }
@@ -102,6 +105,7 @@ a,
   display: flex;
   flex-direction: column;
   padding: 16px 0;
+  border-top: 1px solid #EBF0F6;
 }
 .gnb nav a {
   display: flex;
@@ -133,9 +137,6 @@ a,
 .gnb nav a:hover .ion {
   color: #268DFF;
 }
-.gnb nav + nav {
-  border-top: 1px solid #EBF0F6;
-}
 .gnb h1 {
   display: flex;
   align-items: center;
@@ -144,7 +145,6 @@ a,
   padding: 0 24px;
   border: 1px solid transparent;
   height: 80px;
-  border-bottom: 1px solid #EBF0F6;
   transition: all 0.2s ease-in-out;
 }
 .gnb h1 img {
@@ -165,8 +165,8 @@ a,
   width: 24px;
   height: 80px;
   background: none;
-  border: 1px dotted #EBF0F6;
-  border-width: 0 0 1px 1px;
+  border: 1px solid #EBF0F6;
+  border-width: 0 0 0 1px;
   text-align: center;
   cursor: col-resize;
 }
@@ -185,8 +185,10 @@ a,
   transition: all 0.2s ease-in-out;
 }
 .gnb .btn-collapse:hover {
-  border-color: #C8D6E6;
   background: #FFF;
+}
+.gnb .btn-collapse:hover .ion {
+  color: rgba(0, 28, 52, 0.75);
 }
 
 [data-nav=introduce] .gnb .nav-introduce {
@@ -215,7 +217,6 @@ a,
   box-sizing: border-box;
   padding: 0 40px;
   height: 80px;
-  border-bottom: 1px solid #EBF0F6;
   font-size: 14px;
   line-height: 80px;
   box-shadow: 0 2px #F9F9FA;
