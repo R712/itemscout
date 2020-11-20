@@ -1,9 +1,11 @@
-## itemscout web prototype
+![itemscout logo](https://r712.github.io/itemscout/dist/svg/logo-symbol.svg =128px)
+
+## itemscout 웹 프로토타입
 - for itemscout website redesign
 - preview here 👉 https://r712.github.io/itemscout/branding.html
 
   
-#### root/
+#### 구조 및 구성
 - **dummy/**
   - 디자인 구성용 더미 파일들 ex: 아바타 등.
 - **dist/**
@@ -13,7 +15,7 @@
   - **.js**
 - **.html**
 
-#### next todo
+#### 다음 할 일
 - [ ] image resource update.
 - [ ] mobile responsive support or caution page.
 - [ ] chart mood update
