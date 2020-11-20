@@ -191,9 +191,6 @@ a,
             position: absolute;
             left: -100px;
             top: -100px;
-            &:checked+.ion {
-                transform: rotate(180deg);
-            }
         }
         .ion {
             color: rgba($txt-navy, 40%);
@@ -210,7 +207,8 @@ a,
     }
 }
 
-[data-nav=introduce] .gnb .nav-introduce {
+[data-nav=introduce] .gnb .nav-introduce,
+[data-nav=membership] .gnb .nav-membership {
     border: 1px solid $border;
     background: #FFF;
     color: $txt-navy;

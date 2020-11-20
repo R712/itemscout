@@ -175,9 +175,6 @@ a,
   left: -100px;
   top: -100px;
 }
-.gnb .btn-collapse input:checked + .ion {
-  transform: rotate(180deg);
-}
 .gnb .btn-collapse .ion {
   color: rgba(0, 28, 52, 0.4);
   font-size: 18px;
@@ -191,13 +188,15 @@ a,
   color: rgba(0, 28, 52, 0.75);
 }
 
-[data-nav=introduce] .gnb .nav-introduce {
+[data-nav=introduce] .gnb .nav-introduce,
+[data-nav=membership] .gnb .nav-membership {
   border: 1px solid #EBF0F6;
   background: #FFF;
   color: #001C34;
   font-weight: 700;
 }
-[data-nav=introduce] .gnb .nav-introduce nav .ion {
+[data-nav=introduce] .gnb .nav-introduce nav .ion,
+[data-nav=membership] .gnb .nav-membership nav .ion {
   color: #268DFF;
 }
 
