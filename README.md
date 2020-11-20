@@ -1,7 +1,7 @@
 <img src="https://r712.github.io/itemscout/dist/svg/logo-symbol.svg" width="100" alt="itemscout logo" />
 <img src="https://r712.github.io/itemscout/dist/svg/logo-typo.svg" width="100" alt="itemscout logo" />
 
-## itemscout 웹 프로토타입
+## 웹 프로토타입
 - for itemscout website redesign
 - preview here 👉 https://r712.github.io/itemscout/branding.html
 
