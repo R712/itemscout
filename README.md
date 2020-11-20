@@ -1,4 +1,4 @@
-[itemscout logo](https://r712.github.io/itemscout/dist/svg/logo-symbol.svg =128px)
+![itemscout logo](https://r712.github.io/itemscout/dist/svg/logo-symbol.svg| width=100)
 
 ## itemscout 웹 프로토타입
 - for itemscout website redesign
