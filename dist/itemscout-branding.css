@@ -198,9 +198,13 @@ a,
   color: #001C34;
   font-weight: 700;
 }
-[data-nav=introduce] .gnb .nav-introduce nav .ion,
-[data-nav=membership] .gnb .nav-membership nav .ion {
+[data-nav=introduce] .gnb .nav-introduce .ion,
+[data-nav=membership] .gnb .nav-membership .ion {
   color: #268DFF;
+}
+[data-nav=introduce] .gnb .nav-introduce [data-icon],
+[data-nav=membership] .gnb .nav-membership [data-icon] {
+  background-color: #268DFF;
 }
 
 .hero {

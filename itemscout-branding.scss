@@ -216,10 +216,11 @@ a,
     background: #FFF;
     color: $txt-navy;
     font-weight: 700;
-    nav {
-        .ion {
-            color: $blue;
-        }
+    .ion {
+        color: $blue;
+    }
+    [data-icon] {
+        background-color: $blue;
     }
 }
 
