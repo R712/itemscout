@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>i_gnb_dashboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="i_gnb_dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            <rect id="Rectangle" stroke="#636772" stroke-width="1.5" x="3.75" y="6.75" width="16.5" height="13.5"></rect>
+            <rect id="Rectangle" stroke="#636772" stroke-width="1.5" x="6.75" y="10.75" width="5.5" height="5.5" rx="2.75"></rect>
+            <path d="M13,13.5 L9.5,13.5 L9.5,10 C11.4329966,10 13,11.5670034 13,13.5 Z" id="Combined-Shape" fill="#636772"></path>
+            <rect id="Rectangle" stroke="#636772" stroke-width="1.5" x="2.75" y="3.75" width="18.5" height="3" rx="1.5"></rect>
+            <path d="M14.75,15.5 L15.75,15.5 C16.1642136,15.5 16.5,15.8357864 16.5,16.25 C16.5,16.6642136 16.1642136,17 15.75,17 L14.75,17 C14.3357864,17 14,16.6642136 14,16.25 C14,15.8357864 14.3357864,15.5 14.75,15.5 Z M14.75,10 L16.75,10 C17.1642136,10 17.5,10.3357864 17.5,10.75 C17.5,11.1642136 17.1642136,11.5 16.75,11.5 L14.75,11.5 C14.3357864,11.5 14,11.1642136 14,10.75 C14,10.3357864 14.3357864,10 14.75,10 Z M14.75,12.75 L17.25,12.75 C17.6642136,12.75 18,13.0857864 18,13.5 C18,13.9142136 17.6642136,14.25 17.25,14.25 L14.75,14.25 C14.3357864,14.25 14,13.9142136 14,13.5 C14,13.0857864 14.3357864,12.75 14.75,12.75 Z" id="Combined-Shape" fill="#636772"></path>
+            <rect id="Rectangle" fill="#636772" x="2" y="19.5" width="20" height="1.5" rx="0.75"></rect>
+        </g>
+    </g>
+</svg>

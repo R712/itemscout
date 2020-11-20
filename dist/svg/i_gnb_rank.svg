@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>i_gnb_rank</title>
+    <desc>Created with Sketch.</desc>
+    <g id="i_gnb_rank" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle">
+            <rect x="0" y="0" width="24" height="24"></rect>
+            <rect x="0" y="0" width="24" height="24"></rect>
+            <path d="M9.25,20.25 L9.25,9.25 L4,9.25 C3.86192881,9.25 3.75,9.36192881 3.75,9.5 L3.75,20 C3.75,20.1380712 3.86192881,20.25 4,20.25 L9.25,20.25 Z" stroke="#636772" stroke-width="1.5"></path>
+            <path d="M9.25,20.25 L14.75,20.25 L14.75,4 C14.75,3.86192881 14.6380712,3.75 14.5,3.75 L9.5,3.75 C9.36192881,3.75 9.25,3.86192881 9.25,4 L9.25,20.25 Z" stroke="#636772" stroke-width="1.5"></path>
+            <path d="M14.75,11.75 L14.75,20.25 L20,20.25 C20.1380712,20.25 20.25,20.1380712 20.25,20 L20.25,12 C20.25,11.8619288 20.1380712,11.75 20,11.75 L14.75,11.75 Z" stroke="#636772" stroke-width="1.5"></path>
+        </g>
+    </g>
+</svg>

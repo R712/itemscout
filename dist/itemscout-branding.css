@@ -137,6 +137,9 @@ a,
 .gnb nav a:hover .ion {
   color: #268DFF;
 }
+.gnb nav a:hover [data-icon] {
+  background-color: #268DFF;
+}
 .gnb h1 {
   display: flex;
   align-items: center;

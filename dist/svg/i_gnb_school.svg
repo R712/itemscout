@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>i_gnb_school</title>
+    <desc>Created with Sketch.</desc>
+    <g id="i_gnb_school" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle">
+            <rect x="0" y="0.5" width="24" height="24"></rect>
+            <rect x="0" y="0" width="24" height="24"></rect>
+            <path d="M3.75,14.75 L3.75,20.25 L6.75,20.25 L6.75,14.75 L3.75,14.75 Z" stroke="#636772" stroke-width="1.5"></path>
+            <path d="M17.25,14.75 L17.25,20.25 L20.25,20.25 L20.25,14.75 L17.25,14.75 Z" stroke="#636772" stroke-width="1.5"></path>
+            <path d="M12,3.75 L12,6.75 L16.5,6.75 L16.5,3.75 L12,3.75 Z" stroke="#636772" stroke-width="1.5"></path>
+            <path d="M6.75,12.875 L6.75,20.25 L17.25,20.25 L17.25,12.875 L12,8.9375 L6.75,12.875 Z" stroke="#636772" stroke-width="1.5"></path>
+            <rect stroke="#636772" stroke-width="1.5" x="10.25" y="13.25" width="3.5" height="3.5" rx="1.75"></rect>
+            <rect fill="#636772" x="11.25" y="3" width="1.5" height="6"></rect>
+        </g>
+    </g>
+</svg>

@@ -152,6 +152,9 @@ a,
                 .ion {
                     color: $blue;
                 }
+                [data-icon] {
+                    background-color: $blue;
+                }
             }
         }
     }

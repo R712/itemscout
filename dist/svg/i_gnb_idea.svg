@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>i_gnb_idea</title>
+    <desc>Created with Sketch.</desc>
+    <g id="i_gnb_idea" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            <path d="M7.99828133,13.8011377 L8.20305036,13.9720188 L9.42154974,20.2385871 C9.53575954,20.8259518 10.0502036,21.25 10.648569,21.25 L13.351431,21.25 C13.9497964,21.25 14.4642405,20.8259518 14.5784503,20.2385871 L15.7969496,13.9720188 L16.0017187,13.8011377 C17.4169427,12.6201238 18.25,10.8788443 18.25,9 C18.25,5.54822031 15.4517797,2.75 12,2.75 C8.54822031,2.75 5.75,5.54822031 5.75,9 C5.75,10.8788443 6.5830573,12.6201238 7.99828133,13.8011377 Z" id="Combined-Shape" stroke="#636772" stroke-width="1.5"></path>
+            <path d="M12,5.5 C10.0670034,5.5 8.5,7.06700338 8.5,9" id="Shape" stroke="#636772" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M8.91485293,17.75 L9.41388196,20.2451452 C9.53073801,20.8294254 10.0437565,21.25 10.6396078,21.25 L13.3603922,21.25 C13.9562435,21.25 14.469262,20.8294254 14.586118,20.2451452 L15.0851471,17.75 L8.91485293,17.75 Z" id="Rectangle" stroke="#636772" stroke-width="1.5"></path>
+        </g>
+    </g>
+</svg>

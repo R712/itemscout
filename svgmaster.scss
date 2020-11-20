@@ -1,0 +1,95 @@
+//
+//  아이콘 및 심볼 스타일링 통합 관리 with SCSS
+//  - 기본 권장 마크업 -
+//  <i data-icon="iconname">&encode;</i>
+//  * 상응하는 특수문자 encode 혹은 텍스트 작성은 선택사항입니다.
+//  * 추가할때 중복 네이밍 체크해주세요.
+//  - 기본 추가 방법 -
+//  &[data-icon=iconname] {
+//    mask-image: url('svgURL');
+//    -webkit-mask-image: url('svgURL');
+//  }
+//  - 컬러 제어 방법 -
+//  &[data-icon=value] {
+//  ...
+//  background-color: 컬러값 또는 변수;
+//  }
+//
+//  made by Reum.
+//
+
+/*
+    color config
+*/
+
+$txt-navy: #001C34;
+$txt-gray: #636772;
+$txt-dark: #2F3136;
+$blue: #268DFF;
+$darkblue: #0065D4;
+$bgblue: #F2F8FF;
+$bg: #F6FBFF;
+$border: #EBF0F6;
+$border-deep: #C8D6E6;
+$youtube: #FF0000;
+$yellow: #FBBC05;
+
+/*
+    svg icon 
+*/
+
+i[data-icon] {
+    position: relative;
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    background-color: darken($border-deep, 15%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+    mask: no-repeat center;
+    -webkit-mask: no-repeat center;
+    font-style: normal;
+    text-indent: -9999px;
+    vertical-align: middle;
+    transition: background .2s ease-in-out;
+    //
+    // 아이콘 목록
+    //
+    &[data-icon=gnb-dashboard] {
+        mask-image: url('svg/i_gnb_dashboard.svg');
+        -webkit-mask-image: url('svg/i_gnb_dashboard.svg');
+    }
+    &[data-icon=gnb-idea] {
+        mask-image: url('svg/i_gnb_idea.svg');
+        -webkit-mask-image: url('svg/i_gnb_idea.svg');
+    }
+    &[data-icon=gnb-keyword] {
+        mask-image: url('svg/i_gnb_keyword.svg');
+        -webkit-mask-image: url('svg/i_gnb_keyword.svg');
+    }
+    &[data-icon=gnb-rank] {
+        mask-image: url('svg/i_gnb_rank.svg');
+        -webkit-mask-image: url('svg/i_gnb_rank.svg');
+    }
+    &[data-icon=gnb-school] {
+        mask-image: url('svg/i_gnb_school.svg');
+        -webkit-mask-image: url('svg/i_gnb_school.svg');
+    }
+    &[data-icon=gnb-note] {
+        mask-image: url('svg/i_gnb_note.svg');
+        -webkit-mask-image: url('svg/i_gnb_note.svg');
+    }
+    &[data-icon=gnb-cursor] {
+        mask-image: url('svg/i_gnb_cursor.svg');
+        -webkit-mask-image: url('svg/i_gnb_cursor.svg');
+    }
+    &[data-icon=gnb-brief] {
+        mask-image: url('svg/i_gnb_brief.svg');
+        -webkit-mask-image: url('svg/i_gnb_brief.svg');
+    }
+    &[data-icon=gnb-setting] {
+        mask-image: url('svg/i_gnb_setting.svg');
+        -webkit-mask-image: url('svg/i_gnb_setting.svg');
+    }
+}
