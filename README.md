@@ -2,11 +2,11 @@
 for itemscout website redesign
 preview here 👉 https://r712.github.io/itemscout/branding.html
 
-- dummy/
-  - 디자인 구성용 더미 파일들 ex: 아바타 등.
   
 ### root/
-- dist/
+- **dummy/**
+  - 디자인 구성용 더미 파일들 ex: 아바타 등.
+- **dist/**
   - compile된 파일도 여기에 들어가며 import 경로도 여기입니다.
   - **svg/** 
   - **.css** 
