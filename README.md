@@ -1,9 +1,9 @@
-# itemscout
-for itemscout website redesign
-preview here 👉 https://r712.github.io/itemscout/branding.html
+## itemscout web prototype
+- for itemscout website redesign
+- preview here 👉 https://r712.github.io/itemscout/branding.html
 
   
-### root/
+#### root/
 - **dummy/**
   - 디자인 구성용 더미 파일들 ex: 아바타 등.
 - **dist/**
