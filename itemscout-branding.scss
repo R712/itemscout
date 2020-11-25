@@ -360,6 +360,13 @@ section {
     &.odd {
         background: $bg;
     }
+    &.even {
+        padding: 60px 0 80px;
+        background: darken($bg, 2%);
+        h3 {
+            margin-bottom: 0;
+        }
+    }
     .hero-msg {
         z-index: 1;
         position: relative;
@@ -749,8 +756,8 @@ section {
         box-sizing: border-box;
         width: 46%;
         padding: 24px 28px;
-        background: #FFF;
-        border: 2px solid $border;
+        border: 2px solid $blue;
+        background: $bg;
         border-radius: 8px;
         transition: all .2s ease-in-out;
         header {
@@ -810,8 +817,8 @@ section {
         &:nth-child(2) {
             margin-left: 4%;
             width: 50%;
-            border: 2px solid $blue;
-            background: $bg;
+            border: 2px solid $border;
+            background: #FFF;
         }
         &:hover {
             transform: translateY(-8px);
@@ -826,17 +833,43 @@ section {
 
 
 /*
-    .balloons 말풍선들
-    좌우로 들어오며 추천사 영역에 쓰임
+    .balloons testimonial
+    추천사 메시지 롤링 카드 디자인
 */
 
-.balloons {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.balloon-wrap {
+    position: relative;
+    button {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -24px;
+        height: 48px;
+        width: 48px;
+        border: 0;
+        background: #FFF;
+        color: $blue;
+        font-size: 24px;
+        border-radius: 4px;
+        box-shadow: 0 8px 16px rgba($txt-gray, 10%);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+        &.balloon-next {
+            left: inherit;
+            right: 0;
+        }
+        &:hover {
+            transform: scale(1.15);
+            color: $darkblue;
+        }
+    }
+}
+
+.balloon-item {
+    padding: 24px 0;
     .balloon {
         position: relative;
-        margin: 8px 40px 8px 120px;
+        margin: 0 24px;
         padding: 24px 24px 24px 128px;
         height: 80px;
         background: #FFF;
@@ -862,29 +895,79 @@ section {
         footer {
             z-index: 1;
             position: absolute;
-            right: -40px;
-            bottom: -24px;
-            padding: 6px 16px 8px;
-            background: $border;
+            right: 24px;
+            top: 24px;
             color: $yellow;
             font-size: 18px;
             text-align: center;
-            border-radius: 20px;
         }
-        &:nth-child(odd) {
-            margin: 8px 120px 8px 40px;
+    }
+}
+
+
+/* FAQ 아코디언 */
+
+.faq {
+    border: 1px solid $border;
+    background: #FFF;
+    border-radius: 16px;
+    .faq-item {
+        position: relative;
+        border-top: 1px solid $border;
+        transition: all .2s ease-in-out;
+        overflow: hidden;
+        input {
+            display: none;
+        }
+        label {
+            display: block;
+            padding: 16px 24px;
+            background: #FFF;
+            color: rgba($txt-navy, 60%);
+            font-weight: 500;
+            font-size: 18px;
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+            .ion {
+                margin-right: 8px;
+                color: $border-deep;
+                transition: all .2s ease;
+            }
+        }
+        div {
+            box-sizing: border-box;
+            height: 0;
+            background: $bg;
+            color: rgba($txt-navy, 80%);
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.75;
+            overflow: hidden;
+            transition: height .2s ease-in-out;
+        }
+         :checked+label {
+            color: $txt-navy;
+            font-weight: 700;
+            .ion {
+                color: $blue;
+                transform: rotate(90deg);
+            }
+        }
+         :checked~div {
+            margin: 0 16px 16px;
+            padding: 16px 24px;
+            height: inherit;
+        }
+        &:first-child {
+            border-top: 0;
+            border-radius: 16px 16px 0 0;
+        }
+        &:last-child {
+            border-radius: 0 0 16px 16px;
         }
         &:hover {
             z-index: 5;
-            transform: scale(1.08);
-        }
-    }
-    &:hover {
-        .balloon {
-            opacity: .4;
-            &:hover {
-                opacity: 1;
-            }
+            box-shadow: 0 8px 16px rgba($txt-gray, 10%);
         }
     }
 }
@@ -921,14 +1004,16 @@ section {
 
 .avatar {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     width: 80px;
     height: 80px;
+    border-radius: 50%;
     img {
         width: 80px;
-        height: 80px;
-        border-radius: 50%;
     }
     .ion-logo-youtube {
         position: absolute;
