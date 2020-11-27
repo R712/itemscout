@@ -9,6 +9,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1280px;
   color: #2F3136;
   font-family: "Noto Sans KR", sans-serif;
   font-family: -apple-system, "SF Pro Display", "Helvetica Neue", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
@@ -256,6 +257,8 @@ a,
 .ribbon .msg-card span {
   color: #0065D4;
   font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .ribbon .msg-card .ion {
   margin-left: 8px;
@@ -280,7 +283,7 @@ section {
 }
 section .inner {
   margin: 0 auto;
-  max-width: 720px;
+  max-width: 800px;
 }
 section.hero {
   border-bottom: 1px solid #EBF0F6;
@@ -451,7 +454,7 @@ section .svg-cloud svg {
   width: 8em;
   height: 8em;
   transform: translateY(100%);
-  -webkit-filter: blur(5px);
+  filter: blur(5px);
 }
 section .svg-cloud svg:nth-child(2) {
   transform: scale(1.2);
@@ -462,7 +465,7 @@ section .svg-cloud svg:nth-child(3) {
   transform: scale(0.8);
   animation-delay: 1.5s;
   animation-duration: 10s;
-  -webkit-filter: blur(10px);
+  filter: blur(10px);
 }
 section .svg-cloud svg:nth-child(4) {
   animation-delay: 0.5s;
@@ -477,7 +480,7 @@ section .svg-cloud svg:nth-child(6) {
   transform: scale(1);
   animation-delay: 2s;
   animation-duration: 10s;
-  -webkit-filter: blur(10px);
+  filter: blur(10px);
 }
 section .svg-cloud svg:nth-child(7) {
   transform: scale(0.6);
@@ -705,46 +708,44 @@ section .svg-illust {
     가격, 멤버십, 플랜 영역
 */
 .pricing .pricing-plan {
+  z-index: 2;
+  position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+}
+.pricing .pricing-plan::after {
+  content: "(부가세 별도)";
+  position: absolute;
+  right: 0;
+  bottom: -32px;
+  color: rgba(0, 28, 52, 0.6);
+  font-weight: 300;
+  font-size: 12px;
 }
 .pricing .card {
+  position: relative;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   box-sizing: border-box;
-  width: 46%;
   padding: 24px 28px;
-  border: 2px solid #268DFF;
-  background: #F6FBFF;
-  border-radius: 8px;
+  border: 2px solid #EBF0F6;
+  background: #FFF;
+  box-shadow: 0 16px 24px #F6FBFF;
   transition: all 0.2s ease-in-out;
 }
 .pricing .card header {
-  margin-bottom: 8px;
-  color: #0065D4;
+  margin-bottom: 16px;
+  color: #001C34;
   font-weight: 700;
   font-size: 18px;
 }
-.pricing .card article {
+.pricing .card header p {
+  margin: 8px 0 0;
   color: #001C34;
   font-weight: 300;
   font-size: 13px;
-}
-.pricing .card footer {
-  padding: 16px 0 24px;
-}
-.pricing .card footer button {
-  display: block;
-  width: 100%;
-  height: 56px;
-  border: 0;
-  background: #268DFF;
-  color: #FFF;
-  font-weight: 700;
-  font-size: 15px;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: all 0.2s ease;
 }
 .pricing .card .price-label {
   margin-bottom: 16px;
@@ -759,38 +760,237 @@ section .svg-illust {
   font-weight: 300;
   font-size: 13px;
 }
+.pricing .card .btn {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+  height: 56px;
+  border: 0;
+  background: #268DFF;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
 .pricing .card ul {
   list-style: none;
   margin: 0;
   padding: 0;
   color: #001C34;
+  font-size: 14px;
+  line-height: 1.75;
 }
 .pricing .card li {
+  display: flex;
+  align-items: center;
   margin: 4px 0;
   padding: 0;
 }
 .pricing .card .ion {
+  margin-right: 4px;
   width: 24px;
-  color: #268DFF;
+  color: #C8D6E6;
+  font-size: 22px;
+}
+.pricing .card:nth-child(1) {
+  border-right-style: dotted;
+  border-radius: 8px 0 0 8px;
 }
 .pricing .card:nth-child(2) {
-  margin-left: 4%;
-  width: 50%;
-  border: 2px solid #EBF0F6;
-  background: #FFF;
+  border-color: #EBF0F6 transparent;
+}
+.pricing .card:nth-child(3) {
+  border-left-style: dotted;
+  border-radius: 0 8px 8px 0;
 }
 .pricing .card:hover {
-  transform: translateY(-8px);
+  z-index: 5;
+  transform: scale(1.05);
+  border: 2px solid #C8D6E6;
+  background: #F6FBFF;
+  border-radius: 8px;
   box-shadow: 0 8px 24px #EBF0F6;
 }
-.pricing .card:hover button {
+.pricing .card:hover .btn {
   background: #0065D4;
   box-shadow: 0 2px 8px rgba(0, 101, 212, 0.4);
 }
+.pricing .card.disabled {
+  cursor: not-allowed;
+}
+.pricing .card.disabled:hover {
+  transform: none;
+  border: 2px solid #EBF0F6;
+  background: #FFF;
+  border-radius: 8px 0 0 8px;
+  box-shadow: none;
+}
+
+.ranking-stalker {
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  padding: 16px 24px;
+  width: 320px;
+  border: 1px solid #EBF0F6;
+  border-top: 0;
+  background: #F6FBFF;
+  color: #001C34;
+  border-radius: 0 0 8px 8px;
+}
+.ranking-stalker header {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+.ranking-stalker .ranger-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.ranking-stalker .ranger-slider:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #C8D6E6;
+  border-radius: 2px;
+}
+.ranking-stalker .ranger-slider .ranger-fill {
+  z-index: 1;
+  position: relative;
+  min-width: 18.75%;
+  height: 4px;
+  background: #268DFF;
+  border-radius: 2px;
+  transition: width 0.2s ease-in-out;
+}
+.ranking-stalker .ranger-slider .ranger-fill .ranger-dot {
+  position: absolute;
+  right: -8px;
+  top: -6px;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #0065D4;
+  background: #FFF;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ranking-stalker .ranger-slider .balloon-tutorial {
+  z-index: 5;
+  position: absolute;
+  left: calc(18.75% + 20px);
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  width: auto;
+  height: 30px;
+  background: #16C79E;
+  color: #FFF;
+  font-size: 13px;
+  white-space: nowrap;
+  border-radius: 3px;
+  box-shadow: 0 4px 12px rgba(22, 199, 158, 0.4);
+}
+.ranking-stalker .ranger-slider .balloon-tutorial:before {
+  content: "";
+  z-index: 5;
+  position: absolute;
+  left: -8px;
+  top: calc(50% - 4px);
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-right-color: #16C79E;
+}
+.ranking-stalker .ranger-level {
+  display: flex;
+}
+.ranking-stalker label {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  cursor: pointer;
+}
+.ranking-stalker label input {
+  display: none;
+}
+.ranking-stalker label input ~ span {
+  opacity: 0.4;
+  justify-content: center;
+}
+.ranking-stalker label input:checked ~ span {
+  opacity: 1;
+  font-weight: 700;
+}
+.ranking-stalker label span {
+  display: flex;
+  align-items: center;
+  height: 16px;
+  font-size: 11px;
+  transition: opacity 0.2s ease-in-out;
+}
 
 /*
-    .balloons 말풍선들
-    좌우로 들어오며 추천사 영역에 쓰임
+    멤버십 비교 테이블
+*/
+.pricing-table {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+}
+.pricing-table h4 {
+  padding: 16px 0;
+  border-bottom: 2px solid #EBF0F6;
+  color: #001C34;
+  font-size: 14px;
+}
+.pricing-table .table-column {
+  flex-grow: 1;
+  text-align: center;
+}
+.pricing-table .table-column:first-child {
+  text-align: left;
+}
+.pricing-table .table-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+.pricing-table .table-cell .ion {
+  color: #268DFF;
+  font-size: 18px;
+}
+.pricing-table .table-cell:nth-child(even) {
+  background: #F6FBFF;
+}
+.pricing-table .table-th {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  height: 40px;
+  color: #001C34;
+  font-size: 14px;
+}
+.pricing-table .table-th:nth-child(even) {
+  background: #F6FBFF;
+}
+.pricing-table small {
+  margin-left: 4px;
+  color: rgba(0, 28, 52, 0.6);
+  font-weight: 300;
+  font-size: 11px;
+}
+
+/*
+    .balloons testimonial
+    추천사 메시지 롤링 카드 디자인
 */
 .balloon-wrap {
   position: relative;
@@ -980,31 +1180,31 @@ section .svg-illust {
 */
 .has-tooltip {
   position: relative;
-  line-height: 1.75;
 }
 .has-tooltip strong {
-  color: #0065D4;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: inherit;
   cursor: help;
-}
-.has-tooltip strong:hover + p {
-  z-index: 1;
-  display: block;
-  opacity: 1;
 }
 .has-tooltip p {
   opacity: 0;
   left: 0;
   top: 32px;
   position: absolute;
-  margin: 0 28px;
-  padding: 16px 24px;
+  margin: 0;
+  padding: 12px 16px;
   border: 1px solid #EBF0F6;
   background: #FFF;
-  font-size: 13px;
+  color: rgba(0, 28, 52, 0.8) !important;
+  font-size: 12px;
+  line-height: 1.5;
+  word-break: keep-all;
   box-shadow: 0 4px 16px rgba(235, 240, 246, 0.5);
   transition: all 0.2s ease;
+}
+.has-tooltip:hover p {
+  z-index: 1;
+  display: block;
+  opacity: 1;
 }
 
 /*
@@ -1014,12 +1214,14 @@ section .svg-illust {
     .btn 의 경우 .btn.btn-md.btn-kakao 처럼 중첩 선언해서 사용
 */
 .btn {
+  position: relative;
   box-sizing: border-box;
   padding: 0 12px;
   height: 56px;
   border: 1px solid #EBF0F6;
   background: #F6FBFF;
   color: #001C34;
+  white-space: nowrap;
   border-radius: 2px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
@@ -1054,12 +1256,16 @@ section .svg-illust {
   box-shadow: 0 2px 8px rgba(38, 141, 255, 0.4);
 }
 .btn-txt {
-  height: inherit;
+  margin: 0 4px;
+  padding: 0;
+  height: auto;
   border: 0;
+  border-bottom: 1px solid #C8D6E6;
   background: none;
   color: #001C34;
   font-weight: 300;
   font-size: 12px;
+  text-decoration: none;
 }
 .btn-md {
   height: 32px;
@@ -1086,6 +1292,7 @@ section .svg-illust {
   width: 20px;
   height: 20px;
   border: 1px solid #EBF0F6;
+  font-size: 1px;
   justify-content: center;
   border-radius: 2px;
   transition: all 0.2s ease-in-out;
@@ -1105,7 +1312,43 @@ section .svg-illust {
   border-color: #0065D4;
   background: #268DFF;
   color: #FFF;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: text-top;
+  margin: 0 4px;
+  padding: 0 4px;
+  height: 18px;
+  border: 1px solid #C8D6E6;
+  background: #F6FBFF;
+  color: rgba(0, 28, 52, 0.6);
   font-weight: 700;
+  font-size: 11px;
+  line-height: 1;
+  border-radius: 2px;
+}
+.label-float {
+  position: absolute;
+  left: -4px;
+  top: -4px;
+}
+
+/* disabled 비활성 폼, 섹션 스타일링 */
+:disabled,
+.is-disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+:disabled:hover {
+  border: inherit;
+  background: inherit;
+  cursor: default;
 }
 
 /*

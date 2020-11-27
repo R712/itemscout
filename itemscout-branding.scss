@@ -14,6 +14,8 @@ $border: #EBF0F6;
 $border-deep: #C8D6E6;
 $youtube: #FF0000;
 $yellow: #FBBC05;
+$orange: #F8650F;
+$teal: #16C79E;
 
 /*
     base
@@ -22,6 +24,7 @@ $yellow: #FBBC05;
 body {
     margin: 0;
     padding: 0;
+    min-width: 1280px;
     color: $txt-dark;
     font-family: 'Noto Sans KR', sans-serif;
     font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
@@ -281,6 +284,8 @@ a,
         span {
             color: $darkblue;
             font-weight: 300;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
         .ion {
             margin-left: 8px;
@@ -308,7 +313,7 @@ section {
     overflow: hidden;
     .inner {
         margin: 0 auto;
-        max-width: 720px;
+        max-width: 800px;
     }
     &.hero {
         border-bottom: 1px solid $border;
@@ -478,7 +483,7 @@ section {
             width: 8em;
             height: 8em;
             transform: translateY(100%);
-            -webkit-filter: blur(5px);
+            filter: blur(5px);
             &:nth-child(2) {
                 transform: scale(1.2);
                 animation-delay: 1s;
@@ -488,7 +493,7 @@ section {
                 transform: scale(0.8);
                 animation-delay: 1.5s;
                 animation-duration: 10s;
-                -webkit-filter: blur(10px);
+                filter: blur(10px);
             }
             &:nth-child(4) {
                 animation-delay: 0.5s;
@@ -503,7 +508,7 @@ section {
                 transform: scale(1);
                 animation-delay: 2s;
                 animation-duration: 10s;
-                -webkit-filter: blur(10px);
+                filter: blur(10px);
             }
             &:nth-child(7) {
                 transform: scale(0.6);
@@ -747,44 +752,42 @@ section {
 
 .pricing {
     .pricing-plan {
+        z-index: 2;
+        position: relative;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
+        &::after {
+            content: '(부가세 별도)';
+            position: absolute;
+            right: 0;
+            bottom: -32px;
+            color: rgba($txt-navy, 60%);
+            font-weight: 300;
+            font-size: 12px;
+        }
     }
     .card {
+        position: relative;
         display: flex;
         flex-direction: column;
+        flex-grow: 1;
         box-sizing: border-box;
-        width: 46%;
         padding: 24px 28px;
-        border: 2px solid $blue;
-        background: $bg;
-        border-radius: 8px;
+        border: 2px solid $border;
+        background: #FFF;
+        box-shadow: 0 16px 24px $bg;
         transition: all .2s ease-in-out;
         header {
-            margin-bottom: 8px;
-            color: $darkblue;
+            margin-bottom: 16px;
+            color: $txt-navy;
             font-weight: 700;
             font-size: 18px;
-        }
-        article {
-            color: $txt-navy;
-            font-weight: 300;
-            font-size: 13px;
-        }
-        footer {
-            padding: 16px 0 24px;
-            button {
-                display: block;
-                width: 100%;
-                height: 56px;
-                border: 0;
-                background: $blue;
-                color: #FFF;
-                font-weight: 700;
-                font-size: 15px;
-                border-radius: 2px;
-                cursor: pointer;
-                transition: all .2s ease;
+            p {
+                margin: 8px 0 0;
+                color: $txt-navy;
+                font-weight: 300;
+                font-size: 13px;
             }
         }
         .price-label {
@@ -800,34 +803,235 @@ section {
                 font-size: 13px;
             }
         }
+        .btn {
+            display: block;
+            margin-bottom: 24px;
+            width: 100%;
+            height: 56px;
+            border: 0;
+            background: $blue;
+            color: #FFF;
+            font-weight: 700;
+            font-size: 14px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all .2s ease;
+        }
         ul {
             list-style: none;
             margin: 0;
             padding: 0;
             color: $txt-navy;
+            font-size: 14px;
+            line-height: 1.75;
         }
         li {
+            display: flex;
+            align-items: center;
             margin: 4px 0;
             padding: 0;
         }
         .ion {
+            margin-right: 4px;
             width: 24px;
-            color: $blue;
+            color: $border-deep;
+            font-size: 22px;
+        }
+        &:nth-child(1) {
+            border-right-style: dotted;
+            border-radius: 8px 0 0 8px;
         }
         &:nth-child(2) {
-            margin-left: 4%;
-            width: 50%;
-            border: 2px solid $border;
-            background: #FFF;
+            border-color: $border transparent;
+        }
+        &:nth-child(3) {
+            border-left-style: dotted;
+            border-radius: 0 8px 8px 0;
         }
         &:hover {
-            transform: translateY(-8px);
+            z-index: 5;
+            transform: scale(1.05);
+            border: 2px solid $border-deep;
+            background: $bg;
+            border-radius: 8px;
             box-shadow: 0 8px 24px $border;
-            button {
+            .btn {
                 background: $darkblue;
                 box-shadow: 0 2px 8px rgba($darkblue, 40%);
             }
         }
+        &.disabled {
+            cursor: not-allowed;
+            &:hover {
+                transform: none;
+                border: 2px solid $border;
+                background: #FFF;
+                border-radius: 8px 0 0 8px;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.ranking-stalker {
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    padding: 16px 24px;
+    width: 320px;
+    border: 1px solid $border;
+    border-top: 0;
+    background: $bg;
+    color: $txt-navy;
+    border-radius: 0 0 8px 8px;
+    header {
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+    }
+    .ranger-slider {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 30px;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 4px;
+            background: $border-deep;
+            border-radius: 2px;
+        }
+        .ranger-fill {
+            z-index: 1;
+            position: relative;
+            min-width: 18.75%;
+            height: 4px;
+            background: $blue;
+            border-radius: 2px;
+            transition: width .2s ease-in-out;
+            .ranger-dot {
+                position: absolute;
+                right: -8px;
+                top: -6px;
+                box-sizing: border-box;
+                width: 16px;
+                height: 16px;
+                border: 1px solid $darkblue;
+                background: #FFF;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+        }
+        .balloon-tutorial {
+            z-index: 5;
+            position: absolute;
+            left: calc(18.75% + 20px);
+            top: 0;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            width: auto;
+            height: 30px;
+            background: $teal;
+            color: #FFF;
+            font-size: 13px;
+            white-space: nowrap;
+            border-radius: 3px;
+            box-shadow: 0 4px 12px rgba($teal, 40%);
+            &:before {
+                content: '';
+                z-index: 5;
+                position: absolute;
+                left: -8px;
+                top: calc(50% - 4px);
+                width: 0;
+                height: 0;
+                border: 4px solid transparent;
+                border-right-color: $teal;
+            }
+        }
+    }
+    .ranger-level {
+        display: flex;
+    }
+    label {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        cursor: pointer;
+        input {
+            display: none;
+            &~span {
+                opacity: .4;
+                justify-content: center;
+            }
+            &:checked~span {
+                opacity: 1;
+                font-weight: 700;
+            }
+        }
+        span {
+            display: flex;
+            align-items: center;
+            height: 16px;
+            font-size: 11px;
+            transition: opacity .2s ease-in-out;
+        }
+    }
+}
+
+
+/*
+    멤버십 비교 테이블
+*/
+
+.pricing-table {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    h4 {
+        padding: 16px 0;
+        border-bottom: 2px solid $border;
+        color: $txt-navy;
+        font-size: 14px;
+    }
+    .table-column {
+        flex-grow: 1;
+        text-align: center;
+        &:first-child {
+            text-align: left;
+        }
+    }
+    .table-cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        .ion {
+            color: $blue;
+            font-size: 18px;
+        }
+        &:nth-child(even) {
+            background: $bg;
+        }
+    }
+    .table-th {
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        height: 40px;
+        color: $txt-navy;
+        font-size: 14px;
+        &:nth-child(even) {
+            background: $bg;
+        }
+    }
+    small {
+        margin-left: 4px;
+        color: rgba($txt-navy, 60%);
+        font-weight: 300;
+        font-size: 11px;
     }
 }
 
@@ -1033,30 +1237,30 @@ section {
 
 .has-tooltip {
     position: relative;
-    line-height: 1.75;
     strong {
-        color: $darkblue;
-        font-weight: 500;
-        font-size: 15px;
+        font-weight: inherit;
         cursor: help;
-        &:hover+p {
-            z-index: 1;
-            display: block;
-            opacity: 1;
-        }
     }
     p {
         opacity: 0;
         left: 0;
         top: 32px;
         position: absolute;
-        margin: 0 28px;
-        padding: 16px 24px;
+        margin: 0;
+        padding: 12px 16px;
         border: 1px solid $border;
         background: #FFF;
-        font-size: 13px;
+        color: rgba($txt-navy, 80%) !important;
+        font-size: 12px;
+        line-height: 1.5;
+        word-break: keep-all;
         box-shadow: 0 4px 16px rgba($border, 50%);
         transition: all .2s ease;
+    }
+    &:hover p {
+        z-index: 1;
+        display: block;
+        opacity: 1;
     }
 }
 
@@ -1069,12 +1273,14 @@ section {
 */
 
 .btn {
+    position: relative;
     box-sizing: border-box;
     padding: 0 12px;
     height: 56px;
     border: 1px solid $border;
     background: $bg;
     color: $txt-navy;
+    white-space: nowrap;
     border-radius: 2px;
     transition: all .2s ease-in-out;
     cursor: pointer;
@@ -1108,12 +1314,16 @@ section {
         }
     }
     &-txt {
-        height: inherit;
+        margin: 0 4px;
+        padding: 0;
+        height: auto;
         border: 0;
+        border-bottom: 1px solid $border-deep;
         background: none;
         color: $txt-navy;
         font-weight: 300;
         font-size: 12px;
+        text-decoration: none;
     }
     &-md {
         height: 32px;
@@ -1139,6 +1349,7 @@ section {
             width: 20px;
             height: 20px;
             border: 1px solid $border;
+            font-size: 1px;
             justify-content: center;
             border-radius: 2px;
             transition: all .2s ease-in-out;
@@ -1159,8 +1370,46 @@ section {
         border-color: $darkblue;
         background: $blue;
         color: #FFF;
-        font-weight: 700;
+        font-weight: 500;
+        font-size: 16px;
     }
+}
+
+.label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: text-top;
+    margin: 0 4px;
+    padding: 0 4px;
+    height: 18px;
+    border: 1px solid $border-deep;
+    background: $bg;
+    color: rgba($txt-navy, 60%);
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 1;
+    border-radius: 2px;
+    &-float {
+        position: absolute;
+        left: -4px;
+        top: -4px;
+    }
+}
+
+
+/* disabled 비활성 폼, 섹션 스타일링 */
+
+:disabled,
+.is-disabled {
+    opacity: .4;
+    cursor: default;
+}
+
+:disabled:hover {
+    border: inherit;
+    background: inherit;
+    cursor: default;
 }
 
 
