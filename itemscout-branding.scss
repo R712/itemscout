@@ -404,14 +404,15 @@ section {
                 display: none;
             }
             .hero-input-typing {
-                display: inline-block;
+                position: absolute;
+                display: inline-flex;
                 color: $txt-navy;
                 font-size: 32px;
-                line-height: 40px;
+                line-height: 48px;
                 &::after {
                     content: '';
                     position: relative;
-                    top: -2px;
+                    top: 5px;
                     display: inline-block;
                     margin-left: 4px;
                     height: 36px;
@@ -433,12 +434,6 @@ section {
                 line-height: 80px;
                 text-align: center;
                 text-decoration: none;
-            }
-            &:hover {
-                border-color: $darkblue;
-                a {
-                    opacity: 1;
-                }
             }
         }
     }

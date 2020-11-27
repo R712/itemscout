@@ -376,15 +376,16 @@ section .hero-msg .hero-input .hero-input-word {
   display: none;
 }
 section .hero-msg .hero-input .hero-input-typing {
-  display: inline-block;
+  position: absolute;
+  display: inline-flex;
   color: #001C34;
   font-size: 32px;
-  line-height: 40px;
+  line-height: 48px;
 }
 section .hero-msg .hero-input .hero-input-typing::after {
   content: "";
   position: relative;
-  top: -2px;
+  top: 5px;
   display: inline-block;
   margin-left: 4px;
   height: 36px;
@@ -405,12 +406,6 @@ section .hero-msg .hero-input a {
   line-height: 80px;
   text-align: center;
   text-decoration: none;
-}
-section .hero-msg .hero-input:hover {
-  border-color: #0065D4;
-}
-section .hero-msg .hero-input:hover a {
-  opacity: 1;
 }
 section .svg-cloud {
   z-index: 0;
