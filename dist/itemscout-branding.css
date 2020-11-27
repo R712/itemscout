@@ -775,19 +775,21 @@ section .svg-illust {
   padding: 0;
   color: #001C34;
   font-size: 14px;
-  line-height: 1.75;
+  line-height: 1;
 }
 .pricing .card li {
   display: flex;
   align-items: center;
   margin: 4px 0;
   padding: 0;
+  height: 24px;
+  opacity: 0.8;
 }
 .pricing .card .ion {
-  margin-right: 4px;
+  margin: 0 4px;
   width: 24px;
   color: #C8D6E6;
-  font-size: 22px;
+  font-size: 18px;
 }
 .pricing .card:nth-child(1) {
   border-right-style: dotted;

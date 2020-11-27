@@ -818,19 +818,21 @@ section {
             padding: 0;
             color: $txt-navy;
             font-size: 14px;
-            line-height: 1.75;
+            line-height: 1;
         }
         li {
             display: flex;
             align-items: center;
             margin: 4px 0;
             padding: 0;
+            height: 24px;
+            opacity: .8;
         }
         .ion {
-            margin-right: 4px;
+            margin: 0 4px;
             width: 24px;
             color: $border-deep;
-            font-size: 22px;
+            font-size: 18px;
         }
         &:nth-child(1) {
             border-right-style: dotted;
