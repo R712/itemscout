@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>아이템스카우트</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="[ㅇㅇㅌ] 아이템스카우트">
+    <meta name="description" content="사장님의 안목에 데이터를 더하다, 아이템스카우트">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="itemscout">
+    <meta property="og:title" content="아이템스카우트">
+    <meta property="og:description" content="사장님의 안목에 데이터를 더하다, 아이템스카우트">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://itemscout.io/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="dist/svg/logo-typo.svg">
+    <link rel="SHORTCUT ICON" href="dist/svg/logo-symbol.svg">
+    <link rel="stylesheet" type="text/css" href="brandnew.css" />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+    <link href="dist/animate.css" rel="stylesheet" />
+    <link href="dist/svgmaster.css" rel="stylesheet" />
+    <script src="dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body data-nav="introduce">
+    <!-- GNB 위치 추적용 data-nav -->
+
+    <!-- 레이아웃 감싸기 -->
+    <div class="itemscout-wrap">
+
+        <!--
+            GNB area
+        -->
+        <div class="gnb">
+            <label class="btn-collapse">
+                <input type="checkbox" />
+                <i class="ion ion-ios-reorder"></i>
+            </label>
+            <h1>
+                <img src="dist/svg/logo-symbol.svg" alt="logo" />
+                <img src="dist/svg/logo-typo.svg" alt="itemscout" />
+            </h1>
+            <nav>
+                <a href="#">
+                    <i data-icon="gnb-dashboard"></i>
+                    <span>대시보드</span>
+                </a>
+                <a href="#">
+                    <i data-icon="gnb-idea"></i>
+                    <span>아이템 발굴</span>
+                </a>
+                <a href="#">
+                    <i data-icon="gnb-keyword"></i>
+                    <span>키워드 분석</span>
+                </a>
+                <a href="#">
+                    <i data-icon="gnb-rank"></i>
+                    <span>랭킹 추적</span>
+                </a>
+            </nav>
+            <nav>
+                <a href="#">
+                    <i data-icon="gnb-school"></i>
+                    <span>아이템 스쿨</span>
+                </a>
+                <a href="#">
+                    <i data-icon="gnb-note"></i>
+                    <span>게시판</span>
+                </a>
+                <!-- a href="./branding.html" class="nav-introduce">
+                    <i data-icon="gnb-cursor"></i>
+                    <span>서비스 소개</span>
+                </-->
+                <a href="./membership.html" class="nav-membership">
+                    <i data-icon="gnb-airplane"></i>
+                    <span>멤버십 소개</span>
+                </a>
+            </nav>
+        </div>
+
+        <!--
+            우측 컨테이너 area
+        -->
+        <div class="container">
+
+            <!--
+                사이트 최상단 리본: 공지사항 및 로그인 정보
+            -->
+            <div class="ribbon">
+                <div class="notice">
+                    <strong>공지사항</strong>
+                    <span>멤버십 정책을 새롭고 간결하게 단장하였습니다.</span>
+                    <a href="membership.html">확인하기</a>
+                </div>
+                <div class="account">
+                    <div class="msg-card">
+                        <span>매출 상승의 지름길, 지금 무료로 시작해보세요</span>
+                        <i class="ion ion-ios-arrow-dropright-circle"></i>
+                    </div>
+                    <button class="btn btn-md btn-point">로그인 및 가입</button>
+                </div>
+            </div>
+
+            <!--
+                컨텐츠 본문 area
+            -->
+            <main class="content">
+
+                <!--
+                    서비스 소개 최상단 hero area
+                -->
+                <section class="hero">
+
+                    <!--
+                    for moving particle decoration
+                -->
+                    <div class="svg-cloud">
+                        <div class="svg-cloud-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="#268DFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#268DFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 7.8l-7.7 7.7-4-4-5.7 5.7"/><path d="M15 7h6v6"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#268DFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V6l-3-4H6zM3.8 6h16.4M16 10a4 4 0 1 1-8 0"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#268DFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="#268DFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#268DFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="268DFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.9V17L12 22l-9-4.9V7z"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="inner">
+                        <div class="hero-msg">
+                            <div class="wow fadeInDown">
+                                <span>잘 나가는 셀러의 비결,</span>
+                                <span>데이터가 중요합니다.</span>
+                            </div>
+                            <div class="wow flipInX">
+                                <div class="hero-input">
+                                    <ul class="hero-input-word">
+                                        <li>원피스</li>
+                                        <li>가디건</li>
+                                        <li>차렵이불</li>
+                                    </ul>
+                                    <div class="hero-input-typing"></div>
+                                    <i class="icon ion-md-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-casestudy wow fadeInUp slow" data-wow-delay="1s">
+                            <h4>itemscout.io</h4>
+                            <ul>
+                                <li onclick="location.href='#itemscout'">
+                                    <i class="deco icon ion-md-thumbs-up"></i>
+                                    <span>아이템스카우트, 이런 점이 좋아요.</span>
+                                    <a href="#">더 알아보기 <i class="icon ion-ios-arrow-forward"></i></a>
+                                </li>
+                                <li>
+                                    <i class="deco icon ion-md-school"></i>
+                                    <span>셀러들의 노하우, 아낌없이 함께 나누고 성장해보세요.</span>
+                                    <a href="#">아이템스쿨 보기 <i class="icon ion-ios-arrow-forward"></i></a>
+                                </li>
+                                <li onclick="location.href='./membership.html';">
+                                    <i class="deco icon ion-md-ribbon"></i>
+                                    <span>더 많은 기능이 필요하신가요?</span>
+                                    <a href="./membership.html">멤버십 비교하기 <i class="icon ion-ios-arrow-forward"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brand-canvas" data-canvas="itemsearch">
+                    <h2 class="brand-headline emoji wow fadeInDown slow" data-emoji="diamond">
+                        <span>어떤 아이템이 지금</span>
+                        <span>잘 팔릴까요?</span>
+                    </h2>
+                    <p class="brand-desc wow fadeIn">
+                        <span>판매하고싶은 카테고리와 판매희망 기간만 선택하면 끝.</span>
+                        <span>아이템 발굴 메뉴에서 쉽게 확인하세요!</span>
+                    </p>
+                    <a class="brand-btn arrow wow fadeInUp" data-arrow="right" href="javascript:void(0);">아이템발굴 바로가기</a>
+                    <figure class="brand-screen wow fadeInUp slow" data-wow-delay="1.5s">
+                        <img src="screen/screen00.png" />
+                        <img src="screen/screen00.png" />
+                        <img src="screen/screen00.png" />
+                    </figure>
+                    <div class="brand-bubble">
+                        <span class="wow fadeInRight slow" data-wow-delay="0.5s">작년 겨울에 많이 검색된</span>
+                        <span class="wow fadeInRight slow" data-wow-delay="1s">연말 연시 많이 검색된</span>
+                        <span class="wow fadeInRight slow" data-wow-delay="1.5s">20대 여성들이 많이 찾는</span>
+                        <span class="wow fadeInRight slow" data-wow-delay="2s">30대 남성들이 많이 찾는</span>
+                        <span class="wow fadeInRight slow" data-wow-delay="2.5s">여성의류 아우터에서 인기</span>
+                        <span class="wow fadeInRight slow" data-wow-delay="3s"><strong class="wow flash slow" data-wow-iteration="infinite">|</strong></span>
+                    </div>
+                </section>
+
+                <section class="brand-canvas" data-canvas="keyword">
+                    <h2 class="brand-headline emoji wow fadeInDown slow" data-emoji="okay">
+                        <span>트렌드와 키워드를 알면</span>
+                        <span>판매량은 수직상승!</span>
+                    </h2>
+                    <p class="brand-desc wow fadeIn">
+                        <span>사람들이 많이 찾는 트렌드와 키워드를 찾고 공략해보세요.</span>
+                        <span>시장가치와 연관 키워드등 필요한 정보들은 아이템스카우트가 찾아줄께요.</span>
+                    </p>
+                    <a class="brand-btn arrow wow fadeInUp" data-arrow="right" href="javascript:void(0);">키워드분석 바로가기</a>
+                    <div class="brand-graph">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td style="--start:0.05; --end:0.5;" class="wow fadeInUp slow" data-wow-delay="1.5s"> 50 </td>
+                                    <td style="--start:0.1; --end:0.3;" class="wow fadeInUp slow" data-wow-delay="1s"> 30 </td>
+                                    <td style="--start:0.0; --end:0.2;" class="wow fadeInUp slow" data-wow-delay=".5s"> 20 </td>
+                                </tr>
+                                <tr>
+                                    <td style="--start:0.5; --end:0.8;" class="wow fadeInUp slow" data-wow-delay="1.5s"> 80 </td>
+                                    <td style="--start:0.3; --end:0.5;" class="wow fadeInUp slow" data-wow-delay="1s"> 50 </td>
+                                    <td style="--start:0.2; --end:0.1;" class="wow fadeInUp slow" data-wow-delay=".5s"> 10 </td>
+                                </tr>
+                                <tr>
+                                    <td style="--start:0.8; --end:0.4;" class="wow fadeInUp slow" data-wow-delay="1.5s"> 40 </td>
+                                    <td style="--start:0.5; --end:0.3;" class="wow fadeInUp slow" data-wow-delay="1s"> 30 </td>
+                                    <td style="--start:0.1; --end:0.2;" class="wow fadeInUp slow" data-wow-delay=".5s"> 20 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <figure class="brand-screen wow fadeInUp slow" data-wow-delay="2s">
+                        <img src="screen/screen01.png" />
+                        <img src="screen/screen02.png" />
+                    </figure>
+                </section>
+
+                <section class="brand-canvas" data-canvas="itemschool">
+                    <h2 class="brand-headline emoji wow fadeInDown slow" data-emoji="teacher">
+                        <span>아이템스카우트 사용에</span>
+                        <span>어려움이 있으시다면</span>
+                    </h2>
+                    <p class="brand-desc wow fadeIn">
+                        <span>각 메뉴와 기능, 용어들 모두 낯설고 어떻게 활용하면 좋을지 어려우셨나요?</span>
+                        <span>아이템스카우트 십분 활용부터 꿀팁까지 차근차근 확인해보세요.</span>
+                    </p>
+                    <a class="brand-btn arrow wow fadeInUp" data-arrow="right" href="javascript:void(0);">아이템스쿨 바로가기</a>
+                    <div class="brand-school">
+                        <h4>최근 아이템스쿨 컨텐츠</h4>
+                        <div class="carousel">
+                            <div class="item">
+                                <a href="javascript:void(0);">
+                                    <span>키워드에 대한 모든 것</span>
+                                    <em>#3</em>
+                                    <i class="ion ion-ios-school"></i>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0);">
+                                    <span>무엇을 팔면 좋을까?</span>
+                                    <em>#2</em>
+                                    <i class="ion ion-ios-bulb"></i>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0);">
+                                    <span>노출 순위 올리기 전략</span>
+                                    <em>#2</em>
+                                    <i class="ion ion-ios-podium"></i>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0);">
+                                    <span>키워드에 대한 모든 것</span>
+                                    <em>#2</em>
+                                    <i class="ion ion-ios-school"></i>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0);">
+                                    <span>무엇을 팔면 좋을까?</span>
+                                    <em>#1</em>
+                                    <i class="ion ion-ios-bulb"></i>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0);">
+                                    <span>키워드에 대한 모든 것</span>
+                                    <em>#1</em>
+                                    <i class="ion ion-ios-school"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-control">
+                            <button><i class="icon ion-ios-arrow-back"></i></button>
+                            <button><i class="icon ion-ios-arrow-forward"></i></button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="section odd">
+                    <div class="inner">
+                        <div class="contact">
+                            <img src="dist/svg/contact.svg" class="wow fadeInDown" />
+                            <h4 class="wow fadeInDown">아이템스카우트팀은 더 나은 온라인커머스 시작을 위해<br/>어떤 데이터를 어떻게 제공하면 좋을까 고민하고 만들어가고 있습니다.<br/>혹시 제안하고 싶은 내용이 있나요?</h4>
+                            <button type="button" class="wow fadeInUp slow">이메일로 제안하기 <i class="ion ion-ios-send"></i></button>
+                        </div>
+                        <div class="page-footer">
+                            <address>
+                        <a href="https://itemscout.io">아이템스카우트</a>
+                        <span>상호명: 주식회사 문리버</span>
+                        <span>사업자 등록번호: 120-88-01280</span>
+                        <span>대표: 문승우, 최경준</span>
+                        <span>서울특별시 강남구 선릉로 551, 1층 (역삼동, 새롬빌딩)</span>
+                        <span>통신판매신고번호: 제 2020-서울강남-02113호</span>
+                        <span>전화문의: 070-8833-3002</span>
+                    </address>
+                            <nav>
+                                <a href="#">개인정보 처리방침</a>
+                                <a href="#">이용약관</a>
+                                <a href="#">제휴문의: <em>help@itemscout.io</em></a>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="dist/siema.min.js"></script>
+    <script>
+        var typingBool = false;
+        var typingIdx = 0;
+        var liIndex = 0;
+        var liLength = $(".hero-input-word>li").length;
+
+        // 타이핑될 텍스트를 가져온다 
+        var typingTxt = $(".hero-input-word>li").eq(liIndex).text();
+        typingTxt = typingTxt.split(""); // 한글자씩 자른다. 
+        if (typingBool == false) { // 타이핑이 진행되지 않았다면 
+            typingBool = true;
+            var tyInt = setInterval(typing, 100); // 반복동작 
+        }
+
+        function typing() {
+            if (typingIdx < typingTxt.length) { // 타이핑될 텍스트 길이만큼 반복 
+                $(".hero-input-typing").append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
+                typingIdx++;
+            } else { //한문장이끝나면
+                //다음문장으로.. 마지막문장이면 다시 첫번째 문장으로 
+                if (liIndex >= liLength - 1) {
+                    liIndex = 0;
+                } else {
+                    liIndex++;
+                }
+
+                //다음문장을 타이핑하기위한 셋팅
+                typingIdx = 0;
+                typingBool = false;
+                typingTxt = $(".hero-input-word>li").eq(liIndex).text();
+
+                //다음문장 타이핑전 1초 쉰다
+                clearInterval(tyInt);
+                setTimeout(function() {
+                    $(".hero-input-typing").html('');
+                    tyInt = setInterval(typing, 100);
+                }, 1000);
+            }
+        }
+
+        //
+        //  GNB collapse control
+        //
+        const gnb = $('.gnb');
+        const itemscoutWrap = $('.itemscout-wrap');
+        gnb.on('click', '.btn-collapse', function() {
+            if ($('.btn-collapse input').is(':checked')) {
+                itemscoutWrap.addClass('collapsed');
+            } else {
+                itemscoutWrap.removeClass('collapsed');
+            }
+        });
+
+        //
+        //  Carousel - Siema script
+        //
+        const Itemschool = new Siema({
+            selector: '.carousel',
+            duration: 200,
+            easing: 'cubic-bezier(.17,.67,.32,1.34)',
+            perPage: 3,
+            startIndex: 0,
+            draggable: true,
+            multipleDrag: true,
+            threshold: 20,
+            loop: false
+        });
+        document.querySelector('.carousel-control button:first-child').addEventListener('click', () => Itemschool.prev());
+        document.querySelector('.carousel-control button:last-child').addEventListener('click', () => Itemschool.next());
+    </script>
+
+</body>
+
+</html>
