@@ -31,14 +31,14 @@
     <!-- GNB 위치 추적용 data-nav -->
 
     <!-- 레이아웃 감싸기 -->
-    <div class="itemscout-wrap">
+    <div class="itemscout-wrap collapsed">
 
         <!--
             GNB area
         -->
         <div class="gnb">
             <label class="btn-collapse">
-                <input type="checkbox" />
+                <input type="checkbox" checked />
                 <i class="ion ion-ios-reorder"></i>
             </label>
             <h1>
@@ -114,78 +114,184 @@
                 <!--
                     서비스 소개 최상단 hero area
                 -->
-                <section class="hero">
-
-                    <!--
-                    for moving particle decoration
-                -->
-                    <div class="svg-cloud">
-                        <div class="svg-cloud-inner">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="#268DFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#268DFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 7.8l-7.7 7.7-4-4-5.7 5.7"/><path d="M15 7h6v6"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#268DFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V6l-3-4H6zM3.8 6h16.4M16 10a4 4 0 1 1-8 0"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#268DFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="#268DFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#268DFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="268DFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.9V17L12 22l-9-4.9V7z"/></svg>
-                        </div>
-                    </div>
-
+                <section id="map-hero" class="hero">
                     <div class="inner">
                         <div class="hero-msg">
-                            <div class="wow fadeInDown">
-                                <span>잘 나가는 셀러의 비결,</span>
-                                <span>데이터가 중요합니다.</span>
-                            </div>
-                            <div class="wow flipInX">
+                            <div class="wow fadeInDown" data-wow-delay="0.5s">
+                                <em>잘 나가는 셀러를 위한 모든 데이터</em>
+                                <span>지금 아이템스카우트에서</span>
                                 <div class="hero-input">
                                     <ul class="hero-input-word">
-                                        <li>원피스</li>
-                                        <li>가디건</li>
-                                        <li>차렵이불</li>
+                                        <li>아이템 발굴</li>
+                                        <li>키워드 분석</li>
+                                        <li>연관 키워드</li>
+                                        <li>네이버 랭킹 추적</li>
+                                        <li>가격변동추이</li>
                                     </ul>
                                     <div class="hero-input-typing"></div>
-                                    <i class="icon ion-md-search"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="hero-casestudy wow fadeInUp slow" data-wow-delay="1s">
-                            <h4>itemscout.io</h4>
+                        <div class="hero-casestudy">
                             <ul>
-                                <li onclick="location.href='#itemscout'">
-                                    <i class="deco icon ion-md-thumbs-up"></i>
-                                    <span>아이템스카우트, 이런 점이 좋아요.</span>
-                                    <a href="#">더 알아보기 <i class="icon ion-ios-arrow-forward"></i></a>
+                                <li class="wow fadeInLeft slow" data-wow-delay="1s">
+                                    <a href="#map-itemsearch">
+                                        <i data-icon="gnb-idea"></i>
+                                        <strong>아이템 발굴</strong>
+                                        <span>어떤 아이템이 지금 잘 팔릴까요?</span>
+                                    </a>
                                 </li>
-                                <li>
-                                    <i class="deco icon ion-md-school"></i>
-                                    <span>셀러들의 노하우, 아낌없이 함께 나누고 성장해보세요.</span>
-                                    <a href="#">아이템스쿨 보기 <i class="icon ion-ios-arrow-forward"></i></a>
+                                <li class="wow fadeInDown slow" data-wow-delay="1s">
+                                    <a href="#map-keyword">
+                                        <i data-icon="gnb-keyword"></i>
+                                        <strong>키워드 분석</strong>
+                                        <span>매출상승의 핵심, 키워드에 대한 모든 것!</span>
+                                    </a>
                                 </li>
-                                <li onclick="location.href='./membership.html';">
-                                    <i class="deco icon ion-md-ribbon"></i>
-                                    <span>더 많은 기능이 필요하신가요?</span>
-                                    <a href="./membership.html">멤버십 비교하기 <i class="icon ion-ios-arrow-forward"></i></a>
+                                <li class="wow fadeInUp slow" data-wow-delay="1s">
+                                    <a href="#map-ranking">
+                                        <i data-icon="gnb-rank"></i>
+                                        <strong>랭킹 추적</strong>
+                                        <span>내 상품은 네이버에서 몇위에 노출중일까요?</span>
+                                    </a>
+                                </li>
+                                <li class="wow fadeInRight slow" data-wow-delay="1s">
+                                    <a href="#map-itemschool">
+                                        <i data-icon="gnb-school"></i>
+                                        <strong>아이템 스쿨</strong>
+                                        <span>혹시 아이템스쿨도 셀러도 처음이세요?</span>
+                                    </a>
                                 </li>
                             </ul>
+                            <a class="btn-membership wow fadeIn" href="./membership.html" data-wow-delay="1s">멤버십 보기 <i class="icon ion-ios-arrow-forward"></i></a>
                         </div>
                     </div>
+                    <a href="#map-itemsearch" class="btn-jumper">⇩</a>
                 </section>
 
-                <section class="brand-canvas" data-canvas="itemsearch">
+                <section class="brand-canvas" id="map-itemsearch">
                     <h2 class="brand-headline emoji wow fadeInDown slow" data-emoji="diamond">
                         <span>어떤 아이템이 지금</span>
                         <span>잘 팔릴까요?</span>
                     </h2>
                     <p class="brand-desc wow fadeIn">
-                        <span>판매하고싶은 카테고리와 판매희망 기간만 선택하면 끝.</span>
-                        <span>아이템 발굴 메뉴에서 쉽게 확인하세요!</span>
+                        <span>쇼핑 카테고리와 기간만 설정하면 끝.</span>
+                        <span>급상승/급하락 키워드와 인기 키워드에서 숨어있는 보물 아이템을 찾아보세요!</span>
                     </p>
                     <a class="brand-btn arrow wow fadeInUp" data-arrow="right" href="javascript:void(0);">아이템발굴 바로가기</a>
-                    <figure class="brand-screen wow fadeInUp slow" data-wow-delay="1.5s">
-                        <img src="screen/screen00.png" />
-                        <img src="screen/screen00.png" />
-                        <img src="screen/screen00.png" />
+                    <figure class="brand-screen">
+                        <div class="screen wow fadeInUp slow" data-wow-delay="1s">
+                            <div class="table">
+                                <div class="thead">
+                                    <strong><i class="ion ion-ios-menu"></i> 급상승 키워드</strong>
+                                    <i class="ion ion-ios-help-circle-outline"></i>
+                                </div>
+                                <div class="subhead">
+                                    <strong><i class="ion ion-ios-star"></i> 키워드</strong>
+                                    <span>
+                                        <em>랭킹변화</em>
+                                        <em>검색수</em>
+                                        <em>경쟁강도</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 편백나무찜기</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 오일스테인</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 레트로유리컵</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 얼음트레이</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i>센소다인치약</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen wow fadeInUp slow" data-wow-delay="0.5s">
+                            <div class="table">
+                                <div class="thead">
+                                    <strong><i class="ion ion-ios-menu"></i> 인기 키워드</strong>
+                                    <i class="ion ion-ios-help-circle-outline"></i>
+                                </div>
+                                <div class="subhead">
+                                    <strong><i class="ion ion-ios-star"></i> 키워드</strong>
+                                    <span>
+                                        <em>랭킹변화</em>
+                                        <em>검색수</em>
+                                        <em>경쟁강도</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 편백나무찜기</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em class="good">좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 오일스테인</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em class="good">좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 레트로유리컵</strong>
+                                    <span>
+                                        <em class="down">474</em>
+                                        <em>38,360</em>
+                                        <em class="bad">나쁨</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 얼음트레이</strong>
+                                    <span>
+                                        <em class="down">474</em>
+                                        <em>38,360</em>
+                                        <em class="bad">나쁨</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i>센소다인치약</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em class="good">좋음</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </figure>
                     <div class="brand-bubble">
                         <span class="wow fadeInRight slow" data-wow-delay="0.5s">작년 겨울에 많이 검색된</span>
@@ -195,16 +301,17 @@
                         <span class="wow fadeInRight slow" data-wow-delay="2.5s">여성의류 아우터에서 인기</span>
                         <span class="wow fadeInRight slow" data-wow-delay="3s"><strong class="wow flash slow" data-wow-iteration="infinite">|</strong></span>
                     </div>
+                    <a href="#map-keyword" class="btn-jumper">⇩</a>
                 </section>
 
-                <section class="brand-canvas" data-canvas="keyword">
+                <section class="brand-canvas" id="map-keyword">
                     <h2 class="brand-headline emoji wow fadeInDown slow" data-emoji="okay">
-                        <span>트렌드와 키워드를 알면</span>
+                        <span>키워드와 트렌드가 만나면</span>
                         <span>판매량은 수직상승!</span>
                     </h2>
                     <p class="brand-desc wow fadeIn">
-                        <span>사람들이 많이 찾는 트렌드와 키워드를 찾고 공략해보세요.</span>
-                        <span>시장가치와 연관 키워드등 필요한 정보들은 아이템스카우트가 찾아줄께요.</span>
+                        <span>키워드 데이터만큼은 구글, 네이버 대신 아이템스카우트!</span>
+                        <span>키워드의 지표, 차트, 등록된 상품, 연관 키워드까지 모두 확인해보세요.</span>
                     </p>
                     <a class="brand-btn arrow wow fadeInUp" data-arrow="right" href="javascript:void(0);">키워드분석 바로가기</a>
                     <div class="brand-graph">
@@ -228,20 +335,258 @@
                             </tbody>
                         </table>
                     </div>
-                    <figure class="brand-screen wow fadeInUp slow" data-wow-delay="2s">
-                        <img src="screen/screen01.png" />
-                        <img src="screen/screen02.png" />
+                    <figure class="brand-screen">
+                        <div class="screen wow fadeInUp slow" data-wow-delay="1s">
+                            <div class="table">
+                                <div class="thead">
+                                    <strong><i class="ion ion-ios-menu"></i> 급상승 키워드</strong>
+                                    <i class="ion ion-ios-help-circle-outline"></i>
+                                </div>
+                                <div class="subhead">
+                                    <strong><i class="ion ion-ios-star"></i> 키워드</strong>
+                                    <span>
+                                        <em>랭킹변화</em>
+                                        <em>검색수</em>
+                                        <em>경쟁강도</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 편백나무찜기</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 오일스테인</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 레트로유리컵</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 얼음트레이</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i>센소다인치약</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen wow fadeInUp slow" data-wow-delay="0.5s">
+                            <div class="table">
+                                <div class="thead">
+                                    <strong><i class="ion ion-ios-menu"></i> 인기 키워드</strong>
+                                    <i class="ion ion-ios-help-circle-outline"></i>
+                                </div>
+                                <div class="subhead">
+                                    <strong><i class="ion ion-ios-star"></i> 키워드</strong>
+                                    <span>
+                                        <em>랭킹변화</em>
+                                        <em>검색수</em>
+                                        <em>경쟁강도</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 편백나무찜기</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em class="good">좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 오일스테인</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em class="good">좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 레트로유리컵</strong>
+                                    <span>
+                                        <em class="down">474</em>
+                                        <em>38,360</em>
+                                        <em class="bad">나쁨</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 얼음트레이</strong>
+                                    <span>
+                                        <em class="down">474</em>
+                                        <em>38,360</em>
+                                        <em class="bad">나쁨</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i>센소다인치약</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em class="good">좋음</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </figure>
+                    <a href="#map-ranking" class="btn-jumper">⇩</a>
                 </section>
 
-                <section class="brand-canvas" data-canvas="itemschool">
+                <section class="brand-canvas" id="map-ranking">
+                    <h2 class="brand-headline emoji wow fadeInDown slow" data-emoji="medal">
+                        <span>내 상품의 노출순위는 물론,</span>
+                        <span>리뷰 컨디션과 가격 변화까지</span>
+                    </h2>
+                    <p class="brand-desc wow fadeIn">
+                        <span>상품이 어떤 키워드에서 몇위에 노출되고 있는지 아이템스카우트가 다 관리할께요.</span>
+                        <span>경쟁력있는 상품이 되도록 리뷰와 가격 변화까지 꼼꼼히 보세요.</span>
+                    </p>
+                    <a class="brand-btn arrow wow fadeInUp" data-arrow="right" href="javascript:void(0);">키워드분석 바로가기</a>
+                    <figure class="brand-screen">
+                        <div class="screen wow fadeInUp slow" data-wow-delay="1s">
+                            <div class="table">
+                                <div class="thead">
+                                    <strong><i class="ion ion-ios-menu"></i> 급상승 키워드</strong>
+                                    <i class="ion ion-ios-help-circle-outline"></i>
+                                </div>
+                                <div class="subhead">
+                                    <strong><i class="ion ion-ios-star"></i> 키워드</strong>
+                                    <span>
+                                        <em>랭킹변화</em>
+                                        <em>검색수</em>
+                                        <em>경쟁강도</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 편백나무찜기</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 오일스테인</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 레트로유리컵</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 얼음트레이</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i>센소다인치약</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em>좋음</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen wow fadeInUp slow" data-wow-delay="0.5s">
+                            <div class="table">
+                                <div class="thead">
+                                    <strong><i class="ion ion-ios-menu"></i> 인기 키워드</strong>
+                                    <i class="ion ion-ios-help-circle-outline"></i>
+                                </div>
+                                <div class="subhead">
+                                    <strong><i class="ion ion-ios-star"></i> 키워드</strong>
+                                    <span>
+                                        <em>랭킹변화</em>
+                                        <em>검색수</em>
+                                        <em>경쟁강도</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 편백나무찜기</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em class="good">좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 오일스테인</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em class="good">좋음</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 레트로유리컵</strong>
+                                    <span>
+                                        <em class="down">474</em>
+                                        <em>38,360</em>
+                                        <em class="bad">나쁨</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i> 얼음트레이</strong>
+                                    <span>
+                                        <em class="down">474</em>
+                                        <em>38,360</em>
+                                        <em class="bad">나쁨</em>
+                                    </span>
+                                </div>
+                                <div class="tbody">
+                                    <strong><i class="ion ion-ios-star-outline"></i>센소다인치약</strong>
+                                    <span>
+                                        <em class="up">474</em>
+                                        <em>38,360</em>
+                                        <em class="good">좋음</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <a href="#map-itemschool" class="btn-jumper">⇩</a>
+                </section>
+
+                <section class="brand-canvas" id="map-itemschool">
                     <h2 class="brand-headline emoji wow fadeInDown slow" data-emoji="teacher">
                         <span>아이템스카우트 사용에</span>
                         <span>어려움이 있으시다면</span>
                     </h2>
                     <p class="brand-desc wow fadeIn">
-                        <span>각 메뉴와 기능, 용어들 모두 낯설고 어떻게 활용하면 좋을지 어려우셨나요?</span>
-                        <span>아이템스카우트 십분 활용부터 꿀팁까지 차근차근 확인해보세요.</span>
+                        <span>각 메뉴와 기능, 용어들 모두 낯설어서 어떻게 사용해야할지 아직 잘 모르시겠다구요?</span>
+                        <span>지금 아이템스쿨에서 사용 방법과 활용 꿀팀까지 차근차근 확인해보세요.</span>
                     </p>
                     <a class="brand-btn arrow wow fadeInUp" data-arrow="right" href="javascript:void(0);">아이템스쿨 바로가기</a>
                     <div class="brand-school">
@@ -295,6 +640,7 @@
                             <button><i class="icon ion-ios-arrow-forward"></i></button>
                         </div>
                     </div>
+                    <a href="#contact" class="btn-jumper">⇩</a>
                 </section>
 
                 <section id="contact" class="section odd">
@@ -321,6 +667,7 @@
                             </nav>
                         </div>
                     </div>
+                    <a href="#map-hero" class="btn-jumper">⇧</a>
                 </section>
 
             </main>
