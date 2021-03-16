@@ -159,7 +159,7 @@
                                     <a href="#map-itemschool">
                                         <i data-icon="gnb-school"></i>
                                         <strong>아이템 스쿨</strong>
-                                        <span>혹시 아이템스쿨도 셀러도 처음이세요?</span>
+                                        <span>혹시 아이템스카우트도 셀러도 처음이세요?</span>
                                     </a>
                                 </li>
                             </ul>
@@ -179,135 +179,217 @@
                         <span>급상승/급하락 키워드와 인기 키워드에서 숨어있는 보물 아이템을 찾아보세요!</span>
                     </p>
                     <a class="brand-btn arrow wow fadeInUp" data-arrow="right" href="javascript:void(0);">아이템발굴 바로가기</a>
-                    <figure class="brand-screen">
-                        <div class="screen wow fadeInUp slow" data-wow-delay="1s">
-                            <div class="table">
-                                <div class="thead">
-                                    <strong><i class="ion ion-ios-menu"></i> 급상승 키워드</strong>
-                                    <i class="ion ion-ios-help-circle-outline"></i>
+                    <div class="brand-tab">
+                        <input type="radio" id="itemsearch-one" name="view-itemsearch" checked />
+                        <input type="radio" id="itemsearch-two" name="view-itemsearch" />
+                        <div class="tabs">
+                            <label class="tab" id="tab-itemsearch-one" for="itemsearch-one">주제별 키워드</label>
+                            <label class="tab" id="tab-itemsearch-two" for="itemsearch-two">키워드 데이터</label>
+                        </div>
+                        <div class="panels">
+                            <div class="panel">
+                                <div class="screen wow fadeInUp slow" data-wow-delay="0.5s">
+                                    <div class="table">
+                                        <div class="thead">
+                                            <strong><i class="ion ion-ios-menu"></i> 급상승 키워드</strong>
+                                            <i class="ion ion-ios-help-circle-outline"></i>
+                                        </div>
+                                        <div class="subhead">
+                                            <strong><i class="ion ion-ios-star"></i> 키워드</strong>
+                                            <span>
+                                                <em>랭킹변화</em>
+                                                <em>검색수</em>
+                                                <em>경쟁강도</em>
+                                            </span>
+                                        </div>
+                                        <div class="tbody">
+                                            <strong><i class="ion ion-ios-star-outline"></i> 편백나무찜기</strong>
+                                            <span>
+                                                <em class="up">75</em>
+                                                <em>48,340</em>
+                                                <em class="good">좋음</em>
+                                            </span>
+                                        </div>
+                                        <div class="tbody">
+                                            <strong><i class="ion ion-ios-star-outline"></i> 오일스테인</strong>
+                                            <span>
+                                                <em class="up">121</em>
+                                                <em>1,575</em>
+                                                <em class="good">좋음</em>
+                                            </span>
+                                        </div>
+                                        <div class="tbody">
+                                            <strong><i class="ion ion-ios-star-outline"></i> 레트로유리컵</strong>
+                                            <span>
+                                                <em class="up">15</em>
+                                                <em>89,230</em>
+                                                <em class="good">좋음</em>
+                                            </span>
+                                        </div>
+                                        <div class="tbody">
+                                            <strong><i class="ion ion-ios-star-outline"></i> 얼음트레이</strong>
+                                            <span>
+                                                <em class="up">3</em>
+                                                <em>5,134</em>
+                                                <em class="good">좋음</em>
+                                            </span>
+                                        </div>
+                                        <div class="tbody">
+                                            <strong><i class="ion ion-ios-star-outline"></i>센소다인치약</strong>
+                                            <span>
+                                                <em class="up">375</em>
+                                                <em>7,998</em>
+                                                <em class="good">좋음</em>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="subhead">
-                                    <strong><i class="ion ion-ios-star"></i> 키워드</strong>
-                                    <span>
-                                        <em>랭킹변화</em>
-                                        <em>검색수</em>
-                                        <em>경쟁강도</em>
-                                    </span>
+                                <div class="screen wow fadeInUp">
+                                    <div class="table">
+                                        <div class="thead">
+                                            <strong><i class="ion ion-ios-menu"></i> 인기 키워드</strong>
+                                            <i class="ion ion-ios-help-circle-outline"></i>
+                                        </div>
+                                        <div class="subhead">
+                                            <strong><i class="ion ion-ios-star"></i> 키워드</strong>
+                                            <span>
+                                                <em>랭킹변화</em>
+                                                <em>검색수</em>
+                                                <em>경쟁강도</em>
+                                            </span>
+                                        </div>
+                                        <div class="tbody">
+                                            <strong><i class="ion ion-ios-star-outline"></i> 편백나무찜기</strong>
+                                            <span>
+                                                <em class="up">474</em>
+                                                <em>38,360</em>
+                                                <em class="good">좋음</em>
+                                            </span>
+                                        </div>
+                                        <div class="tbody">
+                                            <strong><i class="ion ion-ios-star-outline"></i> 오일스테인</strong>
+                                            <span>
+                                                <em class="up">474</em>
+                                                <em>38,360</em>
+                                                <em class="good">좋음</em>
+                                            </span>
+                                        </div>
+                                        <div class="tbody">
+                                            <strong><i class="ion ion-ios-star-outline"></i> 레트로유리컵</strong>
+                                            <span>
+                                                <em class="down">474</em>
+                                                <em>38,360</em>
+                                                <em class="bad">나쁨</em>
+                                            </span>
+                                        </div>
+                                        <div class="tbody">
+                                            <strong><i class="ion ion-ios-star-outline"></i> 얼음트레이</strong>
+                                            <span>
+                                                <em class="down">474</em>
+                                                <em>38,360</em>
+                                                <em class="bad">나쁨</em>
+                                            </span>
+                                        </div>
+                                        <div class="tbody">
+                                            <strong><i class="ion ion-ios-star-outline"></i>센소다인치약</strong>
+                                            <span>
+                                                <em class="up">474</em>
+                                                <em>38,360</em>
+                                                <em class="good">좋음</em>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 편백나무찜기</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 오일스테인</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 레트로유리컵</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 얼음트레이</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i>센소다인치약</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
+                            </div>
+                            <div class="panel">
+                                <div class="table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th><i class="ion ion-ios-menu"></i></th>
+                                                <th colspan="8">패션의류 인기 키워드 Top 500</th>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="ion ion-ios-star"></i></td>
+                                                <td>순위</td>
+                                                <td>키워드</span>
+                                                <td>대표 카테고리</td>
+                                                <td>총 검색수</td>
+                                                <td>상품수</td>
+                                                <td>경쟁강도</td>
+                                                <td>광고 클릭 경쟁률</td>
+                                                <td>클릭대비 광고비</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><i class="ion ion-ios-star-outline"></i></td>
+                                                <td>1</td>
+                                                <td>트위드자켓</td>
+                                                <td>재킷</td>
+                                                <td>261500</td>
+                                                <td>453774</td>
+                                                <td class="good">아주좋음</td>
+                                                <td class="hell">아주나쁨</td>
+                                                <td class="good">아주좋음</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="ion ion-ios-star-outline"></i></td>
+                                                <td>2</td>
+                                                <td>원피스</td>
+                                                <td>원피스</td>
+                                                <td>380600</td>
+                                                <td>17947868</td>
+                                                <td class="bad">나쁨</td>
+                                                <td class="hell">아주나쁨</td>
+                                                <td class="good">아주좋음</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="ion ion-ios-star-outline"></i></td>
+                                                <td>3</td>
+                                                <td>트렌치코트</td>
+                                                <td>코트</td>
+                                                <td>162000</td>
+                                                <td>1476189</td>
+                                                <td class="soso">보통</td>
+                                                <td class="hell">아주나쁨</td>
+                                                <td class="nice">좋음</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="ion ion-ios-star-outline"></i></td>
+                                                <td>4</td>
+                                                <td>나이키바람막이</td>
+                                                <td>재킷</td>
+                                                <td>282600</td>
+                                                <td>58118</td>
+                                                <td class="good">아주좋음</td>
+                                                <td class="soso">보통</td>
+                                                <td class="good">아주좋음</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="ion ion-ios-star-outline"></i></td>
+                                                <td>5</td>
+                                                <td>블라우스</td>
+                                                <td>블라우스/셔츠</td>
+                                                <td>123358</td>
+                                                <td>6674962</td>
+                                                <td class="bad">나쁨</td>
+                                                <td class="hell">아주나쁨</td>
+                                                <td class="good">아주좋음</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
-                        <div class="screen wow fadeInUp slow" data-wow-delay="0.5s">
-                            <div class="table">
-                                <div class="thead">
-                                    <strong><i class="ion ion-ios-menu"></i> 인기 키워드</strong>
-                                    <i class="ion ion-ios-help-circle-outline"></i>
-                                </div>
-                                <div class="subhead">
-                                    <strong><i class="ion ion-ios-star"></i> 키워드</strong>
-                                    <span>
-                                        <em>랭킹변화</em>
-                                        <em>검색수</em>
-                                        <em>경쟁강도</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 편백나무찜기</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em class="good">좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 오일스테인</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em class="good">좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 레트로유리컵</strong>
-                                    <span>
-                                        <em class="down">474</em>
-                                        <em>38,360</em>
-                                        <em class="bad">나쁨</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 얼음트레이</strong>
-                                    <span>
-                                        <em class="down">474</em>
-                                        <em>38,360</em>
-                                        <em class="bad">나쁨</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i>센소다인치약</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em class="good">좋음</em>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </figure>
-                    <div class="brand-bubble">
-                        <span class="wow fadeInRight slow" data-wow-delay="0.5s">작년 겨울에 많이 검색된</span>
-                        <span class="wow fadeInRight slow" data-wow-delay="1s">연말 연시 많이 검색된</span>
-                        <span class="wow fadeInRight slow" data-wow-delay="1.5s">20대 여성들이 많이 찾는</span>
-                        <span class="wow fadeInRight slow" data-wow-delay="2s">30대 남성들이 많이 찾는</span>
-                        <span class="wow fadeInRight slow" data-wow-delay="2.5s">여성의류 아우터에서 인기</span>
-                        <span class="wow fadeInRight slow" data-wow-delay="3s"><strong class="wow flash slow" data-wow-iteration="infinite">|</strong></span>
                     </div>
                     <a href="#map-keyword" class="btn-jumper">⇩</a>
                 </section>
 
                 <section class="brand-canvas" id="map-keyword">
                     <h2 class="brand-headline emoji wow fadeInDown slow" data-emoji="okay">
-                        <span>키워드와 트렌드가 만나면</span>
-                        <span>판매량은 수직상승!</span>
+                        <span>매출상승의 핵심,</span>
+                        <span>키워드에 대한 모든 것</span>
                     </h2>
                     <p class="brand-desc wow fadeIn">
                         <span>키워드 데이터만큼은 구글, 네이버 대신 아이템스카우트!</span>
@@ -335,247 +417,271 @@
                             </tbody>
                         </table>
                     </div>
-                    <figure class="brand-screen">
-                        <div class="screen wow fadeInUp slow" data-wow-delay="1s">
-                            <div class="table">
-                                <div class="thead">
-                                    <strong><i class="ion ion-ios-menu"></i> 급상승 키워드</strong>
-                                    <i class="ion ion-ios-help-circle-outline"></i>
+                    <div class="brand-tab">
+                        <input type="radio" id="keyword-one" name="view-keyword" checked />
+                        <input type="radio" id="keyword-two" name="view-keyword" />
+                        <input type="radio" id="keyword-three" name="view-keyword" />
+                        <div class="tabs">
+                            <label class="tab" id="tab-keyword-one" for="keyword-one">키워드 개요</label>
+                            <label class="tab" id="tab-keyword-one" for="keyword-two">상품 목록</label>
+                            <label class="tab" id="tab-keyword-two" for="keyword-three">연관 키워드</label>
+                        </div>
+                        <div class="panels">
+                            <div class="panel">
+                                <dl>
+                                    <dt>상품수</dt>
+                                    <dd><strong class="count-this" data-count="453762">0</strong>개</dd>
+                                    <dt>한 달 검색수</dt>
+                                    <dd><strong class="count-this" data-count="261500">0</strong>회</dd>
+                                    <dt>검색 비율</dt>
+                                    <dd>
+                                        <div class="bar">
+                                            <span>PC <strong class="count-this" data-count="17">0</strong>%</span>
+                                            <span>모바일 <strong class="count-this" data-count="83">0</strong>%</span>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>6개월 매출</dt>
+                                    <dd><strong class="count-this" data-count="80632">0</strong>만원</dd>
+                                    <dt>6개월 판매량</dt>
+                                    <dd><strong class="count-this" data-count="3233">0</strong>개</dd>
+                                    <dt>평균 가격</dt>
+                                    <dd><strong class="count-this" data-count="286100">0</strong>원</dd>
+                                </dl>
+                                <ul>
+                                    <li>
+                                        <strong>아주좋음</strong>
+                                        <span>경쟁 종합 지표</span>
+                                    </li>
+                                    <li>
+                                        <span>경쟁강도</span>
+                                        <strong>1.74 <em class="good">아주좋음</em></strong>
+                                    </li>
+                                    <li>
+                                        <span>실거래상품 비율</span>
+                                        <strong>63% <em class="nice">좋음</em></strong>
+                                    </li>
+                                    <li>
+                                        <span>해외상품 비율</span>
+                                        <strong>10% <em class="bad">나쁨</em></strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="panel">
+                                <div class="table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td>순위</td>
+                                                <td>이미지</td>
+                                                <td>상품명</td>
+                                                <td>판매처</td>
+                                                <td>셀러등급</td>
+                                                <td>가격</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><img src="https://shopping-phinf.pstatic.net/main_8239590/82395906074.2.jpg?type=f200" /></td>
+                                                <td>ㅇㅇㅇㅇㅇ 플룸 트위드 자켓</td>
+                                                <td><em class="naver">N</em>스토어 A</td>
+                                                <td><em class="label">파워</em></td>
+                                                <td>114,870원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><img src="https://shopping-phinf.pstatic.net/main_8219950/82199509952.6.jpg?type=f200" /></td>
+                                                <td>[무료배송] 하객룩 노카라 골드버튼 트위드 자켓</td>
+                                                <td><em class="naver">N</em>스토어 B</td>
+                                                <td><em class="label">빅파워</em></td>
+                                                <td>23,900원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><img src="https://shopping-phinf.pstatic.net/main_8234622/82346226472.jpg?type=f200" /></td>
+                                                <td>하이퀄리티 라운드 금장 트위드 자켓</td>
+                                                <td><em class="naver">N</em>스토어 C</td>
+                                                <td><em class="label">파워</em></td>
+                                                <td>83,500원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><img src="https://shopping-phinf.pstatic.net/main_2412539/24125395726.20200911200423.jpg?type=f200" /></td>
+                                                <td>코코 라운드넥 노카라 트위드 자켓</td>
+                                                <td>묶음</td>
+                                                <td>묶음</td>
+                                                <td>42,790원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><img src="https://shopping-phinf.pstatic.net/main_8268498/82684980136.1.jpg?type=f200" /></td>
+                                                <td>수입 프리미엄 하늘색 트위드 자켓</td>
+                                                <td><em class="naver">N</em>스토어 D</td>
+                                                <td><em class="label">새싹</em></td>
+                                                <td>105,000원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="subhead">
-                                    <strong><i class="ion ion-ios-star"></i> 키워드</strong>
-                                    <span>
-                                        <em>랭킹변화</em>
-                                        <em>검색수</em>
-                                        <em>경쟁강도</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 편백나무찜기</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 오일스테인</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 레트로유리컵</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 얼음트레이</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i>센소다인치약</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
+                            </div>
+                            <div class="panel">
+                                <div class="brand-bubble">
+                                    <img src="https://shopping-phinf.pstatic.net/main_8292961/82929619334.jpg?type=f200" />
+                                    <span>트위드 셋업 <em>5,190</em></span>
+                                    <span>트위드 자켓 <em>261,500</em></span>
+                                    <span>샤넬 트위드 자켓 <em>11,809</em></span>
+                                    <img src="https://shopping-phinf.pstatic.net/main_8240760/82407604301.1.jpg?type=f200" />
+                                    <span>봄 자켓 <em>1,592,692</em></span>
+                                    <span>여자 봄 아우터 <em>390,331</em></span>
+                                    <span>💙</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="screen wow fadeInUp slow" data-wow-delay="0.5s">
-                            <div class="table">
-                                <div class="thead">
-                                    <strong><i class="ion ion-ios-menu"></i> 인기 키워드</strong>
-                                    <i class="ion ion-ios-help-circle-outline"></i>
-                                </div>
-                                <div class="subhead">
-                                    <strong><i class="ion ion-ios-star"></i> 키워드</strong>
-                                    <span>
-                                        <em>랭킹변화</em>
-                                        <em>검색수</em>
-                                        <em>경쟁강도</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 편백나무찜기</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em class="good">좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 오일스테인</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em class="good">좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 레트로유리컵</strong>
-                                    <span>
-                                        <em class="down">474</em>
-                                        <em>38,360</em>
-                                        <em class="bad">나쁨</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 얼음트레이</strong>
-                                    <span>
-                                        <em class="down">474</em>
-                                        <em>38,360</em>
-                                        <em class="bad">나쁨</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i>센소다인치약</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em class="good">좋음</em>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </figure>
+                    </div>
                     <a href="#map-ranking" class="btn-jumper">⇩</a>
                 </section>
 
                 <section class="brand-canvas" id="map-ranking">
                     <h2 class="brand-headline emoji wow fadeInDown slow" data-emoji="medal">
-                        <span>내 상품의 노출순위는 물론,</span>
-                        <span>리뷰 컨디션과 가격 변화까지</span>
+                        <span>내 상품은 네이버에서</span>
+                        <span>몇 위에 노출 중일까요?</span>
                     </h2>
                     <p class="brand-desc wow fadeIn">
                         <span>상품이 어떤 키워드에서 몇위에 노출되고 있는지 아이템스카우트가 다 관리할께요.</span>
                         <span>경쟁력있는 상품이 되도록 리뷰와 가격 변화까지 꼼꼼히 보세요.</span>
                     </p>
-                    <a class="brand-btn arrow wow fadeInUp" data-arrow="right" href="javascript:void(0);">키워드분석 바로가기</a>
-                    <figure class="brand-screen">
-                        <div class="screen wow fadeInUp slow" data-wow-delay="1s">
-                            <div class="table">
-                                <div class="thead">
-                                    <strong><i class="ion ion-ios-menu"></i> 급상승 키워드</strong>
-                                    <i class="ion ion-ios-help-circle-outline"></i>
+                    <a class="brand-btn arrow wow fadeInUp" data-arrow="right" href="javascript:void(0);">랭킹 추적 바로가기</a>
+                    <div class="brand-tab">
+                        <input type="radio" id="ranking-one" name="view-ranking" checked />
+                        <input type="radio" id="ranking-two" name="view-ranking" />
+                        <div class="tabs">
+                            <label class="tab" id="tab-ranking-one" for="ranking-one">상품 일간 추적</label>
+                            <label class="tab" id="tab-ranking-one" for="ranking-two">실시간 랭킹 추적</label>
+                        </div>
+                        <div class="panels">
+                            <div class="panel">
+                                <div class="table wow fadeInUp" data-wow-delay="0.5s">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td></td>
+                                                <th>상품명</th>
+                                                <td>가격</td>
+                                                <td>리뷰수</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="https://shopping-phinf.pstatic.net/main_8239590/82395906074.2.jpg?type=f200" /></td>
+                                                <th>봄 플룸 트위드 자켓</th>
+                                                <td>114,870원</td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://shopping-phinf.pstatic.net/main_8219950/82199509952.6.jpg?type=f200" /></td>
+                                                <th>하객룩 노카라 골드버튼 트위드 자켓</th>
+                                                <td>23,900원</td>
+                                                <td>85</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://shopping-phinf.pstatic.net/main_8234622/82346226472.jpg?type=f200" /></td>
+                                                <th>하이퀄리티 라운드 금장 트위드 자켓</th>
+                                                <td>83,500원</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://shopping-phinf.pstatic.net/main_2412539/24125395726.20200911200423.jpg?type=f200" /></td>
+                                                <th>코코 라운드넥 노카라 트위드 자켓</th>
+                                                <td>42,790원</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://shopping-phinf.pstatic.net/main_8268498/82684980136.1.jpg?type=f200" /></td>
+                                                <th>수입 프리미엄 하늘색 트위드 자켓</th>
+                                                <td>105,000원</td>
+                                                <td>11</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="subhead">
-                                    <strong><i class="ion ion-ios-star"></i> 키워드</strong>
-                                    <span>
-                                        <em>랭킹변화</em>
-                                        <em>검색수</em>
-                                        <em>경쟁강도</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 편백나무찜기</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 오일스테인</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 레트로유리컵</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 얼음트레이</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i>센소다인치약</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em>좋음</em>
-                                    </span>
+                                <div class="chart wow fadeInUp slow" data-wow-delay="1s">
+                                    <svg width="300" height="200" viewbox="0 0 300 200" version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" style="stop-color:rgba(38,141,255,.5);stop-opacity:1"></stop>
+                                            <stop offset="100%" style="stop-color:rgba(0,203,156,.5);stop-opacity:0"></stop>
+                                        </linearGradient>
+                                        <polyline fill="url(#grad)" stroke="none" stroke-width="0" points="
+                                        0,300
+                                        0,0
+                                        50,50
+                                        150,100
+                                        250,80
+                                        350,160
+                                        450,100
+                                        550,100
+                                        650,150
+                                        750,200
+                                        750,300
+                                        "></polyline>
+                                        <polyline fill="none" stroke="#268DFF" stroke-width="2" points="
+                                        0,0
+                                        50,50
+                                        150,100
+                                        250,80
+                                        350,160
+                                        450,100
+                                        550,100
+                                        650,150
+                                        750,200
+                                        "></polyline>
+                                        <g fill="#268DFF">
+                                            <circle cx="50" cy="50" r="6"></circle>
+                                            <circle cx="150" cy="100" r="6"></circle>
+                                            <circle cx="250" cy="80" r="6"></circle>
+                                            <circle cx="350" cy="160" r="6"></circle>
+                                            <circle cx="450" cy="100" r="6"></circle>
+                                            <circle cx="550" cy="100" r="6"></circle>
+                                            <circle cx="650" cy="150" r="6"></circle>
+                                        </g>
+                                    </svg>
                                 </div>
                             </div>
-                        </div>
-                        <div class="screen wow fadeInUp slow" data-wow-delay="0.5s">
-                            <div class="table">
-                                <div class="thead">
-                                    <strong><i class="ion ion-ios-menu"></i> 인기 키워드</strong>
-                                    <i class="ion ion-ios-help-circle-outline"></i>
-                                </div>
-                                <div class="subhead">
-                                    <strong><i class="ion ion-ios-star"></i> 키워드</strong>
-                                    <span>
-                                        <em>랭킹변화</em>
-                                        <em>검색수</em>
-                                        <em>경쟁강도</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 편백나무찜기</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em class="good">좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 오일스테인</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em class="good">좋음</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 레트로유리컵</strong>
-                                    <span>
-                                        <em class="down">474</em>
-                                        <em>38,360</em>
-                                        <em class="bad">나쁨</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i> 얼음트레이</strong>
-                                    <span>
-                                        <em class="down">474</em>
-                                        <em>38,360</em>
-                                        <em class="bad">나쁨</em>
-                                    </span>
-                                </div>
-                                <div class="tbody">
-                                    <strong><i class="ion ion-ios-star-outline"></i>센소다인치약</strong>
-                                    <span>
-                                        <em class="up">474</em>
-                                        <em>38,360</em>
-                                        <em class="good">좋음</em>
-                                    </span>
-                                </div>
+                            <div class="panel">
+                                <img src="https://shop-phinf.pstatic.net/20200324_5/1585058085919CYnfL_JPEG/22417920461623685_684339236.jpg?type=m510" class="item" />
+                                <dl>
+                                    <dt>스토어</dt>
+                                    <dd><strong>아이템몰</strong></dd>
+                                    <dt>키워드</dt>
+                                    <dd><strong>봄자켓</strong></dd>
+                                    <dt>순위</dt>
+                                    <dd>
+                                        <strong>16위</strong>
+                                    </dd>
+                                    <dt>상품명</dt>
+                                    <dd>봄 트위드 숏 자켓</dd>
+                                    <dt>갱신일</dt>
+                                    <dd>2021-03-16 19:03</dd>
+                                </dl>
+                                <img src="https://shop-phinf.pstatic.net/20200219_153/1582100994385XW2Ml_JPEG/19463327950336891_1557284447.jpg?type=m510" class="item" />
+                                <dl>
+                                    <dt>스토어</dt>
+                                    <dd><strong>스카우트몰</strong></dd>
+                                    <dt>키워드</dt>
+                                    <dd><strong>플랫슈즈</strong></dd>
+                                    <dt>순위</dt>
+                                    <dd>
+                                        <strong>31위</strong>
+                                    </dd>
+                                    <dt>상품명</dt>
+                                    <dd>말랑 쿠션 플랫슈즈</dd>
+                                    <dt>갱신일</dt>
+                                    <dd>2021-03-16 19:03</dd>
+                                </dl>
                             </div>
                         </div>
-                    </figure>
+                    </div>
                     <a href="#map-itemschool" class="btn-jumper">⇩</a>
                 </section>
 
@@ -640,26 +746,74 @@
                             <button><i class="icon ion-ios-arrow-forward"></i></button>
                         </div>
                     </div>
+                    <a href="#map-faq" class="btn-jumper">⇩</a>
+                </section>
+
+                <section class="brand-canvas odd" id="map-faq">
+                    <h3 class="brand-headline wow fadeInDown slow emoji" data-emoji="faq">
+                        <span>자주 묻는 질문</span>
+                    </h3>
+                    <div class="faq">
+                        <div class="faq-item wow fadeInLeft slow">
+                            <input type="radio" name="faq" id="faq-0" checked />
+                            <label for="faq-0">
+                                <i class="ion ion-md-arrow-dropright-circle"></i>
+                                <span>아이템스카우트는 꼭 유료로 사용해야 하나요?</span>
+                            </label>
+                            <div>아닙니다. 무료로 대부분의 기능을 사용하실 수 있습니다. 보다 더 많은 정보조회를 희망하는 경우에는 부분적인 유료서비스를 검토해보시고 알맞은 멤버십을 시작하세요.</div>
+                        </div>
+                        <div class="faq-item wow fadeInRight slow">
+                            <input type="radio" name="faq" id="faq-1" />
+                            <label for="faq-1">
+                                <i class="ion ion-md-arrow-dropright-circle"></i>
+                                <span>유료서비스를 미리 체험해 볼 수 있을까요?</span>
+                            </label>
+                            <div>초보셀러는 14일간 무료로 사용할 수 있으며, 14일안에만 취소하시면 추가 결제되는 부분이 없으십니다. 단, 최초 1회에 한하여 체험이 가능함을 유의해주세요.</div>
+                        </div>
+                        <div class="faq-item wow fadeInLeft slow">
+                            <input type="radio" name="faq" id="faq-2" />
+                            <label for="faq-2">
+                                <i class="ion ion-md-arrow-dropright-circle"></i>
+                                <span>랭킹추적, 왜 해야하는지 잘 모르겠어요.</span>
+                            </label>
+                            <div>송구스럽사오나 랭킹추적은 정주님과 경준님 도훈님 승우님이 아마도 더 좋은 답을 주실 것으로 아뢰옵니다. 송구스럽사오나 랭킹추적은 정주님과 경준님 도훈님 승우님이 아마도 더 좋은 답을 주실 것으로 아뢰옵니다. 송구스럽사오나 랭킹추적은 정주님과 경준님 도훈님 승우님이 아마도 더 좋은 답을 주실 것으로 아뢰옵니다.</div>
+                        </div>
+                        <div class="faq-item wow fadeInRight slow">
+                            <input type="radio" name="faq" id="faq-3" />
+                            <label for="faq-3">
+                                <i class="ion ion-md-arrow-dropright-circle"></i>
+                                <span>랭킹추적 키워드를 50개보다 더 많이 등록하고 싶어요.</span>
+                            </label>
+                            <div>중수셀러는 중수셀러 +1 ~ +5 단계가 있습니다. 단계를 상승시키면 얼마든지 상품 및 키워드등을 추가 등록하실 수 있습니다. 중수셀러는 중수셀러 +1 ~ +5 단계가 있습니다. 단계를 상승시키면 얼마든지 상품 및 키워드등을 추가 등록하실 수 있습니다.</div>
+                        </div>
+                        <div class="faq-item wow fadeInLeft slow">
+                            <input type="radio" name="faq" id="faq-4" />
+                            <label for="faq-4">
+                                <i class="ion ion-md-arrow-dropright-circle"></i>
+                                <span>중수셀러와 고수셀러의 차이가 무엇인가요?</span>
+                            </label>
+                            <div>송구스럽사오나 랭킹추적은 정주님과 경준님 도훈님 승우님이 아마도 더 좋은 답을 주실 것으로 아뢰옵니다. 송구스럽사오나 랭킹추적은 정주님과 경준님 도훈님 승우님이 아마도 더 좋은 답을 주실 것으로 아뢰옵니다. 송구스럽사오나 랭킹추적은 정주님과 경준님 도훈님 승우님이 아마도 더 좋은 답을 주실 것으로 아뢰옵니다.</div>
+                        </div>
+                    </div>
                     <a href="#contact" class="btn-jumper">⇩</a>
                 </section>
 
-                <section id="contact" class="section odd">
+                <section class="brand-canvas" id="contact">
                     <div class="inner">
                         <div class="contact">
-                            <img src="dist/svg/contact.svg" class="wow fadeInDown" />
-                            <h4 class="wow fadeInDown">아이템스카우트팀은 더 나은 온라인커머스 시작을 위해<br/>어떤 데이터를 어떻게 제공하면 좋을까 고민하고 만들어가고 있습니다.<br/>혹시 제안하고 싶은 내용이 있나요?</h4>
+                            <h4 class="emoji wow fadeInDown" data-emoji="writing">아이템스카우트는 더 나은 온라인커머스 시작을 위해<br/>어떤 정보가 효과적이며 필요할까 고민하며 만들어가고 있습니다.<br/>혹시 제안하고 싶은 내용이 있나요?</h4>
                             <button type="button" class="wow fadeInUp slow">이메일로 제안하기 <i class="ion ion-ios-send"></i></button>
                         </div>
                         <div class="page-footer">
                             <address>
-                        <a href="https://itemscout.io">아이템스카우트</a>
-                        <span>상호명: 주식회사 문리버</span>
-                        <span>사업자 등록번호: 120-88-01280</span>
-                        <span>대표: 문승우, 최경준</span>
-                        <span>서울특별시 강남구 선릉로 551, 1층 (역삼동, 새롬빌딩)</span>
-                        <span>통신판매신고번호: 제 2020-서울강남-02113호</span>
-                        <span>전화문의: 070-8833-3002</span>
-                    </address>
+                                <a href="https://itemscout.io">아이템스카우트</a>
+                                <span>상호명: 주식회사 문리버</span>
+                                <span>사업자 등록번호: 120-88-01280</span>
+                                <span>대표: 문승우, 최경준</span>
+                                <span>서울특별시 강남구 선릉로 551, 1층 (역삼동, 새롬빌딩)</span>
+                                <span>통신판매신고번호: 제 2020-서울강남-02113호</span>
+                                <span>전화문의: 070-8833-3002</span>
+                            </address>
                             <nav>
                                 <a href="#">개인정보 처리방침</a>
                                 <a href="#">이용약관</a>
@@ -747,6 +901,64 @@
         });
         document.querySelector('.carousel-control button:first-child').addEventListener('click', () => Itemschool.prev());
         document.querySelector('.carousel-control button:last-child').addEventListener('click', () => Itemschool.next());
+
+        //
+        //  Animated Number Counter on scroll
+        //
+        function commaSeparateNumber(val) {
+            while (/(\d+)(\d{3})/.test(val.toString())) {
+                val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+            }
+            return val;
+        }
+        let preCount = 0;
+        $(window).scroll(function() {
+            let oTop = $('.panels').offset().top - window.innerHeight;
+            if (preCount == 0 && $(window).scrollTop() > oTop) {
+                $('.count-this').each(function() {
+                    let $this = $(this),
+                        countTo = $this.attr('data-count');
+                    $({
+                        countNum: $this.text()
+                    }).animate({
+                        countNum: countTo
+                    },
+                    {
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function() {
+                            $this.text(commaSeparateNumber(Math.floor(this.countNum)));
+                        },
+                        complete: function() {
+                            $this.text(commaSeparateNumber(Math.floor(this.countNum)));
+                        }
+                    });
+                });
+                preCount = 1;
+            }
+        });
+        $('.brand-tab').on('click', 'label', function(){
+            $(this).closest('.brand-tab').find('.count-this').each(function() {
+                let $this = $(this),
+                    countTo = $this.attr('data-count');
+                $({
+                    countNum: $this.text()
+                }).animate({
+                    countNum: countTo
+                },
+                {
+                    duration: 500,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(commaSeparateNumber(Math.floor(this.countNum)));
+                    },
+                    complete: function() {
+                        $this.text(commaSeparateNumber(Math.floor(this.countNum)));
+                    }
+                });
+            });
+        });
+
     </script>
 
 </body>
